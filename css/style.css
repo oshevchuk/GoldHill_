@@ -409,12 +409,22 @@ body {
     color: #ffffff; }
   .milestones .hill {
     width: 100%;
-    min-height: 720px;
-    background-image: url("../img/hills.png");
+    background-image: url("../img/hill/main_luxury.png");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100%;
     position: relative; }
+    .milestones .hill .bloker {
+      width: 100vw;
+      height: 37.5vw; }
+    .milestones .hill .st0 {
+      fill: none;
+      stroke: #CDB956;
+      stroke-width: 2;
+      stroke-miterlimit: 10;
+      stroke-dasharray: 1750;
+      stroke-dashoffset: 0; }
     .milestones .hill .hill-mask {
+      width: 100%;
       position: absolute; }
     .milestones .hill .hill-captions {
       position: absolute;
@@ -474,28 +484,28 @@ body {
             height: 80%; }
       .milestones .hill .hill-captions #point1 {
         left: 10%;
-        bottom: 17%; }
+        bottom: 14%; }
         .milestones .hill .hill-captions #point1 .radio-mask {
-          left: -4px;
+          left: -9px;
           top: 0px; }
       .milestones .hill .hill-captions #point2 {
         left: 24%;
-        bottom: 28%; }
+        bottom: 24%; }
         .milestones .hill .hill-captions #point2 .radio-mask {
           left: 2px;
           top: 0px; }
       .milestones .hill .hill-captions #point3 {
         left: 43%;
-        bottom: 59%; }
+        bottom: 56%; }
         .milestones .hill .hill-captions #point3 .radio-mask {
-          left: -4px;
-          top: -8px; }
+          left: 0px;
+          top: 0px; }
       .milestones .hill .hill-captions #point4 {
         left: 73%;
-        bottom: 85%; }
+        bottom: 81%; }
       .milestones .hill .hill-captions #point5 {
         left: 83%;
-        bottom: 65%; }
+        bottom: 61%; }
         .milestones .hill .hill-captions #point5 .radio-mask {
           top: -3px;
           left: -1px; }
@@ -650,12 +660,8 @@ body {
     .whiteItem .content {
       padding-right: 0;
       padding-left: 10%;
-<<<<<<< HEAD
-      max-width: 100%; }
-=======
       max-width: 100%;
       box-sizing: content-box; }
->>>>>>> f10c0f0aacfe34cf4d61a37082cfc039941f7e46
       .whiteItem .content .text {
         box-sizing: content-box;
         width: 100%;
@@ -720,10 +726,6 @@ body {
     width: 95%;
     margin: auto; } }
 
-<<<<<<< HEAD
-input#menuSwitch[type=checkbox]:checked ~ ul {
-  display: flex !important; }
-=======
 @media (max-width: 1000px) {
   .whiteItem img {
     width: 70%; }
@@ -780,9 +782,18 @@ input#menuSwitch[type=checkbox]:checked ~ ul {
   animation: fadeInUp 600ms; }
 
 .fadeInDown.show {
-  -moz-animation: fadeInDown 600ms;
-  -webkit-animation: fadeInDown 600ms;
-  animation: fadeInDown 600ms; }
+  -moz-animation: fadeInDown 1000ms;
+  -webkit-animation: fadeInDown 1000ms;
+  animation: fadeInDown 1000ms; }
+
+.show.hill-mask .st0 {
+  animation: dash 2.5s linear forwards; }
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1750; }
+  to {
+    stroke-dashoffset: 0; } }
 
 @keyframes fadeInUp {
   0% {
@@ -831,4 +842,3 @@ input#menuSwitch[type=checkbox]:checked ~ ul {
     opacity: 0; }
   to {
     opacity: 1; } }
->>>>>>> f10c0f0aacfe34cf4d61a37082cfc039941f7e46

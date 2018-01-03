@@ -471,12 +471,28 @@ body {
   }
   .hill {
     width: 100%;
-    min-height: 720px;
-    background-image: url('../img/hills.png');
+    //min-height: 660px;
+    background-image: url('../img/hill/main_luxury.png');
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100%;
     position: relative;
+    .bloker{
+      //position: absolute;
+      //border: 1px solid white;
+      width: 100vw;
+      height: 37.5vw;
+    }
+    .st0{
+      fill: none;
+      stroke: #CDB956;
+      stroke-width: 2;
+      stroke-miterlimit: 10;
+      stroke-dasharray: 1750;
+      stroke-dashoffset: 0;
+      //animation: dash 2.5s linear forwards;
+    }
     .hill-mask{
+      width: 100%;
       position: absolute;
     }
     .hill-captions {
@@ -547,15 +563,15 @@ body {
 
       #point1 {
         left: 10%;
-        bottom: 17%;
+        bottom: 14%;
         .radio-mask {
-          left: -4px;
+          left: -9px;
           top: 0px;;
         }
       }
       #point2 {
         left: 24%;
-        bottom: 28%;
+        bottom: 24%;
         .radio-mask {
           left: 2px;
           top: 0px;;
@@ -563,19 +579,19 @@ body {
       }
       #point3 {
         left: 43%;
-        bottom: 59%;
+        bottom: 56%;
         .radio-mask {
-          left: -4px;
-          top: -8px;;
+          left: 0px;
+          top: 0px;;
         }
       }
       #point4 {
         left: 73%;
-        bottom: 85%;
+        bottom: 81%;
       }
       #point5 {
         left: 83%;
-        bottom: 65%;
+        bottom: 61%;
         .radio-mask {
           top: -3px;
           left: -1px;

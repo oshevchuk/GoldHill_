@@ -29,9 +29,25 @@
 }
 
 .fadeInDown.show{
-  -moz-animation: fadeInDown 600ms;
-  -webkit-animation: fadeInDown 600ms ;
-  animation: fadeInDown 600ms ;
+  -moz-animation: fadeInDown 1000ms;
+  -webkit-animation: fadeInDown 1000ms ;
+  animation: fadeInDown 1000ms;
+  //-moz-animation-delay: 1s;
+  //-webkit-animation-delay: 1s;
+  //animation-delay: 1s;
+}
+
+.show.hill-mask .st0{
+  animation: dash 2.5s linear forwards;
+}
+
+@keyframes dash {
+  from{
+    stroke-dashoffset: 1750;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
 @keyframes fadeInUp{
