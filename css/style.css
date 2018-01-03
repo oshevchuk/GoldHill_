@@ -26,7 +26,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat-Light';
-  background: linear-gradient(to bottom right, #0f0e0f, #4a4949); }
+  background: linear-gradient(to bottom right, #0f0e0f, #4a4949);
+  overflow-x: hidden; }
 
 .container {
   max-width: 1920px;
@@ -413,6 +414,8 @@ body {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative; }
+    .milestones .hill .hill-mask {
+      position: absolute; }
     .milestones .hill .hill-captions {
       position: absolute;
       display: block;
@@ -496,8 +499,13 @@ body {
         .milestones .hill .hill-captions #point5 .radio-mask {
           top: -3px;
           left: -1px; }
+      .milestones .hill .hill-captions input[type=radio]:hover ~ label.radio-mask {
+        animation: pulse 2s infinite; }
       .milestones .hill .hill-captions input[type=radio]:checked ~ label.radio-mask {
         animation: pulse 2s infinite; }
+      .milestones .hill .hill-captions input[type=radio]:hover ~ div {
+        display: block;
+        animation: fadeInDown 1s forwards; }
       .milestones .hill .hill-captions input[type=radio]:checked ~ div {
         display: block;
         animation: fadeInDown 1s forwards; }
@@ -737,3 +745,81 @@ body {
 
 input#menuSwitch[type=checkbox]:checked ~ ul {
   display: flex !important; }
+
+.multi-step-right.show {
+  -moz-animation: right_animation 400ms;
+  -webkit-animation: right_animation 400ms;
+  animation: right_animation 400ms; }
+
+.anim-right.show {
+  -moz-animation: anim-right_ 300ms;
+  -webkit-animation: anim-right_ 300ms;
+  animation: anim-right_ 300ms; }
+
+.fadeIn.show {
+  -moz-animation: fadeIn 600ms;
+  -webkit-animation: fadeIn 600ms;
+  animation: fadeIn 600ms; }
+
+.fadeInLeft.show {
+  -moz-animation: fadeInLeft 600ms;
+  -webkit-animation: fadeInLeft 600ms;
+  animation: fadeInLeft 600ms; }
+
+.fadeInUp.show {
+  -moz-animation: fadeInUp 600ms;
+  -webkit-animation: fadeInUp 600ms;
+  animation: fadeInUp 600ms; }
+
+.fadeInDown.show {
+  -moz-animation: fadeInDown 600ms;
+  -webkit-animation: fadeInDown 600ms;
+  animation: fadeInDown 600ms; }
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0%, 20%, 0); }
+  100% {
+    opacity: 1;
+    transform: translate3d(0%, 0px, 0); } }
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0%, -100px, 0); }
+  100% {
+    opacity: 1;
+    transform: translate3d(0%, 0px, 0); } }
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translate3d(-50%, 0px, 0); }
+  100% {
+    opacity: 1;
+    transform: translate3d(0%, 0px, 0); } }
+
+@keyframes right_animation {
+  0% {
+    opacity: 0;
+    transform: translate3d(0px, -110px, 0); }
+  75% {
+    opacity: 0.8; }
+  100% {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0); } }
+
+@keyframes anim-right_ {
+  0% {
+    opacity: 0;
+    transform: translate3d(50%, 0px, 0); }
+  100% {
+    opacity: 1;
+    transform: translate3d(0%, 0px, 0); } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
