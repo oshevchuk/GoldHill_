@@ -661,7 +661,7 @@ body {
       padding-right: 0;
       padding-left: 10%;
       max-width: 100%;
-      box-sizing: content-box; }
+      box-sizing: border-box; }
       .whiteItem .content .text {
         box-sizing: content-box;
         width: 100%;
