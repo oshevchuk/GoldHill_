@@ -363,7 +363,9 @@ body {
       line-height: 74px;
       color: #ffffff;
       text-align: center;
-      margin-bottom: 26px; }
+      margin-bottom: 26px;
+      margin-top: -18px;
+      margin-left: -36px; }
     .items-collection .item:first-child img {
       height: calc(100% - 100px); }
     .items-collection .item .drops {
