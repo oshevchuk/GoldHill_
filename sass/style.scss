@@ -386,19 +386,40 @@ body {
 }
 
 .items-container {
-  padding-top: 120px;
+  padding-top: 220px;
   padding-bottom: 150px;
 }
 
 .items-collection {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  //align-items: flex-end;
   width: 95%;
   margin: auto;
   .item {
     position: relative;
     margin: 0px 27px;
+
+    img{
+      height: 100%;
+      object-fit: cover;
+    }
+    &:first-child{
+      &:before{
+        content: "Rooms & Suites";
+        display: block;
+        font-family: 'Mistuki 4 PERSONALUSE';
+        font-size: 80px;
+        font-weight: 400;
+        line-height: 74px;
+        color: #ffffff;
+        text-align: center;
+        margin-bottom: 26px;
+      }
+      img{
+        height: calc(100% - 100px);
+      }
+    }
 
     .drops {
       position: absolute;
