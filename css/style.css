@@ -769,14 +769,26 @@ body {
     width: 80%; }
   .items-collection .item .drops {
     position: initial; }
+    .items-collection .item .drops a {
+      padding-left: 20px; }
+    .items-collection .item .drops .text {
+      padding-left: 40px;
+      font-size: 3vw;
+      line-height: 9vw;
+      width: 80%; }
+      .items-collection .item .drops .text:before {
+        left: 20px; }
   .milestones {
     padding-top: 0; }
     .milestones h2 {
       margin-bottom: 160px; }
   .milestones .hill .hill-captions .points .date {
     font-size: 4vw; }
-  .milestones .hill .points div {
+  .milestones .hill .hill-captions .points div {
     text-shadow: 0px 0px 8px black; }
+  .milestones .hill .hill-captions .points .date {
+    bottom: 25px;
+    left: -8vw; }
   .milestones .hill #point5 div, .milestones .hill #point4 div {
     left: auto;
     right: -65px;

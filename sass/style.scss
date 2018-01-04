@@ -991,6 +991,18 @@ body {
       }
       .drops{
         position: initial;
+        a{
+          padding-left: 20px;
+        }
+        .text{
+          &:before{
+            left: 20px;
+          }
+          padding-left: 40px;
+          font-size: 3vw;
+          line-height: 9vw;
+          width: 80%;
+        }
       }
     }
   }
@@ -1005,9 +1017,13 @@ body {
       .hill-captions .points .date{
         font-size: 4vw;
       }
-      .points {
+      .hill-captions .points {
         div {
           text-shadow: 0px 0px 8px black;
+        }
+        .date{
+          bottom: 25px;
+          left: -8vw;
         }
       }
       #point5, #point4 {
