@@ -58,6 +58,7 @@ function check_view() {
     var window_bottom_position=(window_top_position+window_height);
 
     $.each($animatedElements, function () {
+        var delta=100;
         var $element=$(this);
         var element_height=$element.outerHeight();
         var element_top_position=$element.offset().top;

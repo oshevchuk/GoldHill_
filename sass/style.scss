@@ -1,6 +1,5 @@
 @import "fonts";
 
-
 body {
   margin: 0;
   padding: 0;
@@ -930,7 +929,7 @@ body {
     }
   }
   .head-container{
-    padding-left: 5%;
+    //padding-left: 5%;
     .darkItem{
       margin:0;
       width: 100%;
@@ -940,8 +939,17 @@ body {
     flex-direction: row;
     background-color: black;
   }
-  .whiteItem .content .title{
-    padding-left: 20px;
+  .whiteItem .content {
+    //padding-left: 5%;
+    .title {
+      padding-left: 20px;
+      //h4 {
+      //  font-size: 4vw;
+      //}
+      //h2{
+      //  font-size: 12vw;
+      //}
+    }
   }
 }
 
@@ -954,6 +962,56 @@ body {
       font-size: 6vmin;
     }
   }
+
+  .whiteItem .content {
+    padding-left: 5%;
+    .title {
+      padding-left: 20px;
+      h4 {
+        font-size: 4vw;
+      }
+      h2{
+        font-size: 12vw;
+      }
+    }
+    .text{
+      max-width: 95%;
+      width: 95%;
+    }
+  }
+
+  .items-collection{
+    .item{
+      img{
+        display: block;
+        padding-bottom: 10px;
+        margin: auto;
+      }
+      .drops{
+        position: initial;
+      }
+    }
+  }
+  .milestones{
+    padding-top: 0;
+    h2{
+      margin-bottom: 160px;
+    }
+  }
+  .hill{
+    .points{
+      div{
+        text-shadow: 0px 0px 8px black;
+      }
+    }
+    #point5, #point4{
+      div{
+        left: auto;
+        right: -65px;
+        bottom: 100px;
+      }
+    }
+  }
 }
 
 
@@ -961,5 +1019,11 @@ input#menuSwitch[type=checkbox]:checked ~ ul {
   display: flex !important;
 }
 
+.animated{
+  opacity: 0;
+}
+svg.animated{
+  opacity: 1;
+}
 
 @import "animations";
