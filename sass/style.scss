@@ -792,6 +792,7 @@ body {
       right: auto;
       display: flex;
       justify-content: center;
+      align-items: center;
       div {
         display: none;
       }
@@ -986,6 +987,7 @@ body {
         display: block;
         padding-bottom: 10px;
         margin: auto;
+        width: 80%;
       }
       .drops{
         position: initial;
@@ -998,17 +1000,37 @@ body {
       margin-bottom: 160px;
     }
   }
-  .hill{
-    .points{
-      div{
-        text-shadow: 0px 0px 8px black;
+  .milestones {
+    .hill {
+      .hill-captions .points .date{
+        font-size: 4vw;
+      }
+      .points {
+        div {
+          text-shadow: 0px 0px 8px black;
+        }
+      }
+      #point5, #point4 {
+        div {
+          left: auto;
+          right: -65px;
+          bottom: 100px;
+        }
       }
     }
-    #point5, #point4{
-      div{
-        left: auto;
-        right: -65px;
-        bottom: 100px;
+  }
+  .footer{
+    &>div{
+      //flex-direction: column;
+    }
+    .navigation{
+      ul{
+        li{
+          a{
+            line-height: 30px;
+            font-size: 2vw;
+          }
+        }
       }
     }
   }
