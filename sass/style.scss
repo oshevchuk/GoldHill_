@@ -479,7 +479,8 @@ body {
       //position: absolute;
       //border: 1px solid white;
       width: 100vw;
-      height: 37.5vw;
+      //height: 37.5vw;
+      height: 730px;
     }
     .st0{
       fill: none;
@@ -711,6 +712,11 @@ body {
 
 }
 
+@media (max-width: 1900px) {
+  .milestones .hill .bloker{
+    height: 37.5vw;
+  }
+}
 @media (max-width: 1800px) {
   .head-container {
     .space {

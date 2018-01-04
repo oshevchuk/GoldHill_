@@ -415,7 +415,7 @@ body {
     position: relative; }
     .milestones .hill .bloker {
       width: 100vw;
-      height: 37.5vw; }
+      height: 730px; }
     .milestones .hill .st0 {
       fill: none;
       stroke: #CDB956;
@@ -593,6 +593,10 @@ body {
   opacity: 0.2;
   color: #8b8b8b;
   padding-top: 40px; }
+
+@media (max-width: 1900px) {
+  .milestones .hill .bloker {
+    height: 37.5vw; } }
 
 @media (max-width: 1800px) {
   .head-container .space {
