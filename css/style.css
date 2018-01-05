@@ -26,7 +26,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat-Light';
-  background: linear-gradient(to bottom right, #0f0e0f, #4a4949);
+  background-image: url("../img/ground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   overflow-x: hidden; }
 
 .container {
@@ -253,7 +255,8 @@ body {
       max-width: 670px;
       width: 100%;
       position: relative;
-      z-index: 1; }
+      z-index: 1;
+      box-shadow: 0px 35px 130px rgba(0, 0, 0, 0.6); }
     .darkItem .image div {
       max-width: 400px;
       width: 100%;
@@ -327,7 +330,6 @@ body {
       max-width: 550px; }
 
 .body-gradient {
-  background: linear-gradient(to bottom right, #0c0c0c, #3c3738);
   display: flex;
   flex-direction: column; }
 
@@ -340,12 +342,13 @@ body {
   text-align: center; }
 
 .items-container {
-  padding-top: 220px;
+  padding-top: 120px;
   padding-bottom: 150px; }
 
 .items-collection {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   width: 95%;
   margin: auto; }
   .items-collection .item {
@@ -354,20 +357,6 @@ body {
     .items-collection .item img {
       height: 100%;
       object-fit: cover; }
-    .items-collection .item:first-child:before {
-      content: "Rooms & Suites";
-      display: block;
-      font-family: 'Mistuki 4 PERSONALUSE';
-      font-size: 80px;
-      font-weight: 400;
-      line-height: 74px;
-      color: #ffffff;
-      text-align: center;
-      margin-bottom: 26px;
-      margin-top: -18px;
-      margin-left: -36px; }
-    .items-collection .item:first-child img {
-      height: calc(100% - 100px); }
     .items-collection .item .drops {
       position: absolute;
       bottom: -60px;
@@ -414,6 +403,9 @@ body {
         bottom: -152px; }
         .items-collection .item .drops:hover .text {
           height: 100px; }
+  .items-collection .item:nth-child(even) .drops {
+    background-image: url("../img/item_bg2.png");
+    background-size: cover; }
 
 .milestones {
   padding-top: 100px; }
@@ -759,8 +751,7 @@ body {
     margin: 0;
     width: 100%; }
   .sm {
-    flex-direction: row;
-    background-color: black; }
+    flex-direction: row; }
   .whiteItem .content .title {
     padding-left: 20px; } }
 

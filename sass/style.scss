@@ -5,7 +5,10 @@ body {
   padding: 0;
   font-family: 'Montserrat-Light';
   //background-color: #000000;
-  background: linear-gradient(to bottom right, #0f0e0f, #4a4949);
+  //background: linear-gradient(to bottom right, #0f0e0f, #4a4949);
+  background-image: url('../img/ground.png');
+  background-repeat: no-repeat;
+  background-size: cover;
   overflow-x: hidden;
 }
 
@@ -283,6 +286,7 @@ body {
       width: 100%;
       position: relative;
       z-index: 1;
+      box-shadow: 0px 35px 130px rgba(0, 0, 0, 0.6);
     }
     div {
       max-width: 400px;
@@ -371,7 +375,7 @@ body {
 }
 
 .body-gradient {
-  background: linear-gradient(to bottom right, #0c0c0c, #3c3738);
+  //background: linear-gradient(to bottom right, #0c0c0c, #3c3738);
   display: flex;
   flex-direction: column;
 }
@@ -386,42 +390,42 @@ body {
 }
 
 .items-container {
-  padding-top: 220px;
+  padding-top: 120px;
   padding-bottom: 150px;
 }
 
 .items-collection {
   display: flex;
   justify-content: space-between;
-  //align-items: flex-end;
+  align-items: flex-end;
   width: 95%;
   margin: auto;
   .item {
     position: relative;
     margin: 0px 27px;
 
-    img{
+    img {
       height: 100%;
       object-fit: cover;
     }
-    &:first-child{
-      &:before{
-        content: "Rooms & Suites";
-        display: block;
-        font-family: 'Mistuki 4 PERSONALUSE';
-        font-size: 80px;
-        font-weight: 400;
-        line-height: 74px;
-        color: #ffffff;
-        text-align: center;
-        margin-bottom: 26px;
-        margin-top: -18px;
-        margin-left: -36px;
-      }
-      img{
-        height: calc(100% - 100px);
-      }
-    }
+    //&:first-child{
+    //  &:before{
+    //    content: "Rooms & Suites";
+    //    display: block;
+    //    font-family: 'Mistuki 4 PERSONALUSE';
+    //    font-size: 80px;
+    //    font-weight: 400;
+    //    line-height: 74px;
+    //    color: #ffffff;
+    //    text-align: center;
+    //    margin-bottom: 26px;
+    //    margin-top: -18px;
+    //    margin-left: -36px;
+    //  }
+    //  img{
+    //    height: calc(100% - 100px);
+    //  }
+    //}
 
     .drops {
       position: absolute;
@@ -443,13 +447,13 @@ body {
       transition: 0.2s;
       padding-top: 40px;
       padding-bottom: 10px;
-      a{
+      a {
         color: #282828;
         text-decoration: none;
         padding-left: 58px;
         padding-bottom: 20px;
       }
-      .text{
+      .text {
         //display: none;
         height: 0;
         overflow: hidden;
@@ -460,24 +464,30 @@ body {
         padding-left: 100px;
         //padding-top: 20px;
         width: 65%;
-        &:before{
+        &:before {
           content: "";
           position: absolute;
           width: 2px;
           border-left: 3px solid #282828;
           height: 60%;
-          top:15%;
+          top: 15%;
           left: 60px;
         }
       }
       &:hover {
         padding-bottom: 30px;
         bottom: -152px; //calc 130+60
-        .text{
+        .text {
           height: 100px;
           //display: block;
         }
       }
+    }
+  }
+  .item:nth-child(even){
+    .drops {
+      background-image: url('../img/item_bg2.png');
+      background-size: cover;
     }
   }
 }
@@ -498,14 +508,14 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
     position: relative;
-    .bloker{
+    .bloker {
       //position: absolute;
       //border: 1px solid white;
       width: 100vw;
       //height: 37.5vw;
       height: 730px;
     }
-    .st0{
+    .st0 {
       fill: none;
       stroke: #CDB956;
       stroke-width: 2;
@@ -514,7 +524,7 @@ body {
       stroke-dashoffset: 0;
       //animation: dash 2.5s linear forwards;
     }
-    .hill-mask{
+    .hill-mask {
       width: 100%;
       position: absolute;
     }
@@ -736,10 +746,11 @@ body {
 }
 
 @media (max-width: 1900px) {
-  .milestones .hill .bloker{
+  .milestones .hill .bloker {
     height: 37.5vw;
   }
 }
+
 @media (max-width: 1800px) {
   .head-container {
     .space {
@@ -958,16 +969,16 @@ body {
       width: 75px;
     }
   }
-  .head-container{
+  .head-container {
     //padding-left: 5%;
-    .darkItem{
-      margin:0;
+    .darkItem {
+      margin: 0;
       width: 100%;
     }
   }
-  .sm{
+  .sm {
     flex-direction: row;
-    background-color: black;
+    //background-color: black;
   }
   .whiteItem .content {
     //padding-left: 5%;
@@ -984,9 +995,9 @@ body {
 }
 
 @media (max-width: 600px) {
-  .sm .darkItem{
+  .sm .darkItem {
     padding-top: 80px;
-    .name{
+    .name {
       padding-top: 20px;
       padding-bottom: 20px;
       font-size: 6vmin;
@@ -1000,31 +1011,31 @@ body {
       h4 {
         font-size: 4vw;
       }
-      h2{
+      h2 {
         font-size: 12vw;
       }
     }
-    .text{
+    .text {
       max-width: 95%;
       width: 95%;
     }
   }
 
-  .items-collection{
-    .item{
-      img{
+  .items-collection {
+    .item {
+      img {
         display: block;
         padding-bottom: 10px;
         margin: auto;
         width: 80%;
       }
-      .drops{
+      .drops {
         position: initial;
-        a{
+        a {
           padding-left: 20px;
         }
-        .text{
-          &:before{
+        .text {
+          &:before {
             left: 20px;
           }
           padding-left: 40px;
@@ -1035,22 +1046,22 @@ body {
       }
     }
   }
-  .milestones{
+  .milestones {
     padding-top: 0;
-    h2{
+    h2 {
       margin-bottom: 160px;
     }
   }
   .milestones {
     .hill {
-      .hill-captions .points .date{
+      .hill-captions .points .date {
         font-size: 4vw;
       }
       .hill-captions .points {
         div {
           text-shadow: 0px 0px 8px black;
         }
-        .date{
+        .date {
           bottom: 25px;
           left: -8vw;
         }
@@ -1064,14 +1075,14 @@ body {
       }
     }
   }
-  .footer{
-    &>div{
+  .footer {
+    & > div {
       //flex-direction: column;
     }
-    .navigation{
-      ul{
-        li{
-          a{
+    .navigation {
+      ul {
+        li {
+          a {
             line-height: 30px;
             font-size: 2vw;
           }
@@ -1081,15 +1092,15 @@ body {
   }
 }
 
-
 input#menuSwitch[type=checkbox]:checked ~ ul {
   display: flex !important;
 }
 
-.animated{
+.animated {
   opacity: 0;
 }
-svg.animated{
+
+svg.animated {
   opacity: 1;
 }
 
