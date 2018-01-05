@@ -39,6 +39,19 @@ body {
   justify-content: space-between;
 }
 
+.left-text{
+  margin-top: 150px;
+  margin-bottom: 100px;
+  padding-left: 145px;
+  font-family: 'Montserrat-Light';
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #cbb9b9;
+  max-width: 680px;
+  width: 100%;
+}
+
 .vertical-text {
   transform: rotate(270deg);
   margin-bottom: 30px;
@@ -60,7 +73,6 @@ body {
     justify-content: space-between;
     //background-image: url('/img/header_bg.png');
   }
-
   .menu {
     position: absolute;
     top: 0;
@@ -132,9 +144,11 @@ body {
     font-family: 'Mistuki 4 PERSONALUSE';
     font-size: 103px;
     font-weight: 400;
-    line-height: 100;
+    line-height: 100px;
     right: 300px;
     bottom: 200px;
+    color: white;
+    text-shadow: 0px 0px 5px black;
   }
 }
 .slider {
@@ -261,6 +275,220 @@ body {
 .space {
   min-width: 140px;
   width: 140px;
+}
+
+.time-line{
+  padding-left: 140px;
+  padding-right: 140px;
+  background-image: url('../img/time-line/vector-smart-object.png');
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  position: relative;
+  &:before{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 182px;
+    width: 1px;
+    height: 100%;
+    border-left: 18px solid #dec85b;
+    box-sizing: border-box;
+  }
+  .time-item{
+    z-index: 1;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 340px;
+    div{
+      img{
+        max-width: 480px;
+        width: 100%;
+      }
+    }
+    .year{
+      min-width: 100px;
+      width: 100px;
+      height: 100px;
+      background-image: linear-gradient(-42deg, #f4d47d 0%, #c88139 100%);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Montserrat-SemiBold";
+      font-size: 26px;
+      font-weight: 500;
+      line-height: 36px;
+      color: #282828;
+    }
+    .description{
+      min-width: 200px;
+      max-width: 200px;
+      span {
+        display: inline-block;
+        font-family: 'Montserrat-Light';
+        border-top: 3px solid #dec85b;
+        font-size: 26px;
+        font-weight: 500;
+        line-height: 46px;
+        color: #ffffff;
+        letter-spacing: 0.88px;
+        padding-top: 65px;
+      }
+    }
+    .content{
+      max-width: 610px;
+      width: 100%;
+      h2{
+        font-family: "Mistuki 1 PERSONALUSE";
+        font-size: 80px;
+        font-weight: 400;
+        line-height: 107px;
+        margin-top: -25px;
+        margin-bottom: 37px;
+        color: white;
+      }
+      p{
+        color: #cbb9b9;
+        font-family: 'Montserrat-Light';
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 36px;
+      }
+      .bottom-content{
+        font-family: 'Montserrat-Light';
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 46px;
+        letter-spacing: 0.88px;
+        color: white;
+      }
+      .separate{
+        padding-left: 60px;
+        box-sizing: border-box;
+        position: relative;
+        &:before{
+          content: "";
+          display: block;
+          position: absolute;
+          top:0px;
+          left: 0px;
+          width: 3px;
+          height: 90%;
+          border-left: 3px solid #dec85b;
+        }
+        h4{
+          font-family: 'Montserrat-Light';
+          font-size: 26px;
+          font-weight: 500;
+          line-height: 36px;
+          letter-spacing: 0.88px;
+          color: white;
+        }
+        h2{
+          font-family: 'Mistuki 4 PERSONALUSE';
+          font-size: 80px;
+          font-weight: 400;
+          line-height: 74px;
+        }
+      }
+    }
+  }
+}
+
+.white-time-item{
+  padding-left: 140px;
+  padding-right: 140px;
+  position: relative;
+  background-color: #ffffff;
+  padding-top: 120px;
+  padding-bottom: 145px;
+  background-image: url('../img/time-line/gold-hill-front-view.png');
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: auto 80%;
+  display: flex;
+  justify-content: space-between;
+  &:before{
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 182px;
+    width: 1px;
+    height: 140px;
+    border-left: 18px solid #dec85b;
+    box-sizing: border-box;
+  }
+  .year{
+    position: relative;
+    min-width: 100px;
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(-42deg, #f4d47d 0%, #c88139 100%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat-SemiBold";
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 36px;
+    color: #282828;
+  }
+  .description{
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+    span{
+      display: inline-block;
+      font-family: 'Montserrat-Light';
+      border-top: 3px solid #dec85b;
+      font-size: 26px;
+      font-weight: 600;
+      line-height: 46px;
+      color: #282828;
+      max-width: 150px;
+      letter-spacing: 0.88px;
+      padding-top: 65px;
+    }
+  }
+  .content{
+    max-width: 600px;
+    width: 100%;
+    h2 {
+      font-family: "Mistuki 1 PERSONALUSE";
+      font-size: 80px;
+      font-weight: 400;
+      line-height: 84px;
+      color: #282828;
+      margin-top: -25px;
+    }
+    div{
+      font-family: 'Montserrat-Light';
+      font-size: 26px;
+      font-weight: 600;
+      line-height: 36px;
+      letter-spacing: 0.88px;
+      padding-left: 60px;
+      position: relative;
+      max-width: 170px;
+      &:before{
+        position: absolute;
+        content: "";
+        top:5%;
+        left: 0;
+        width: 1;
+        height: 90%;
+        border-left: 3px solid #dec85b;
+      }
+    }
+    p{
+      color: #756b6b;
+      font-family: 'Montserrat-Light';
+      font-size: 17px;
+      line-height: 36px;
+    }
+  }
 }
 
 .darkItem {
@@ -770,6 +998,31 @@ body {
 
 }
 
+.footer-links{
+  padding-left: 135px;
+  padding-right: 135px;
+  box-sizing: border-box;
+  div{
+    min-height: 140px;
+    width: 100%;
+    border-bottom: 1px solid #363636;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    a{
+      font-family: "Montserrat-SemiBold";
+      font-size: 14px;
+      line-height: 55px;
+      display: inline-block;
+      color: #d1ad62;
+      letter-spacing: 3.92px;
+      text-decoration: none;
+      text-transform: uppercase;
+      border-bottom: 3px solid #d1ad62;
+    }
+  }
+}
+
 @media (max-width: 1900px) {
   .milestones .hill .bloker {
     height: 37.5vw;
@@ -798,6 +1051,13 @@ body {
   .milestones {
     h2 {
       padding-left: 5%;
+    }
+  }
+  .time-line, .white-time-item{
+    padding-left: 30px;
+    padding-right: 30px;
+    &:before{
+      left: 69px;
     }
   }
 }
@@ -841,6 +1101,27 @@ body {
     padding-top: 70px;
     padding-bottom: 0px;
   }
+  .time-line{
+    .time-item{
+      flex-direction: column;
+      padding-left: 170px;
+      padding-bottom: 100px;
+      .year{
+        position: absolute;
+        left: 0;
+      }
+      .description{
+        span{
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
+      }
+      .content{
+        max-width: 95%;
+        margin-bottom: 20px;
+      }
+    }
+  }
 }
 
 @media (max-width: 1370px) {
@@ -867,6 +1148,9 @@ body {
         max-width: 100%;
       }
     }
+  }
+  .white-time-item{
+    background-size: auto 50%;
   }
 }
 
@@ -950,7 +1234,7 @@ body {
         }
       }
     }
-    .slider {
+    .slider, .header-static {
       margin-top: 0px;
     }
     .vertical-text {
@@ -976,6 +1260,32 @@ body {
   .darkItem {
     width: 95%;
     margin: auto;
+  }
+  .white-time-item{
+    flex-direction: column;
+    padding-left: 160px;
+    padding-bottom: 250px;
+    background-size: 50%;
+    .year{
+      position: absolute;
+      left: 30px;
+    }
+    .description{
+      display: block;
+      width: 100%;
+      span{
+        padding-top: 20px;
+        padding-bottom: 30px;
+        max-width: 100%;
+      }
+    }
+    .content{
+      max-width: 95%;
+      h2{
+        margin-top: 0px;
+        margin-bottom: 20px;
+      }
+    }
   }
 }
 
@@ -1016,6 +1326,20 @@ body {
       //  font-size: 12vw;
       //}
     }
+  }
+  .header-static{
+    img{
+      width: 100%;
+    }
+    .text{
+      right: 20px;
+    }
+  }
+  .left-text{
+    padding-left: 5%;
+    width: 95%;
+    box-sizing: border-box;
+    max-width: 100%;
   }
 }
 
@@ -1114,6 +1438,48 @@ body {
         }
       }
     }
+  }
+  .header-static{
+    .text{
+      font-size: 20vw;
+    }
+  }
+  .time-line{
+    .time-item{
+      padding-left: 120px;
+      .content{
+        .separate {
+          padding-left: 0px;
+          &:before{
+            display: none;
+          }
+          h4 {
+            font-size: 3vw;
+            line-height: 3.5vw;
+          }
+        }
+        h2, .separate h2{
+          font-size: 8vw;
+          line-height: 9vw;
+        }
+      }
+    }
+  }
+  .white-time-item{
+    .description{
+      font-size: 4vw;
+      line-height: 4.5vw;
+    }
+    .content{
+      h2{
+        font-size: 9vw;
+        line-height: 9.5vw;
+      }
+    }
+  }
+  .footer-links{
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
 

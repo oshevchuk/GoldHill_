@@ -52,6 +52,18 @@ body {
   align-items: center;
   justify-content: space-between; }
 
+.left-text {
+  margin-top: 150px;
+  margin-bottom: 100px;
+  padding-left: 145px;
+  font-family: 'Montserrat-Light';
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #cbb9b9;
+  max-width: 680px;
+  width: 100%; }
+
 .vertical-text {
   transform: rotate(270deg);
   margin-bottom: 30px;
@@ -128,9 +140,11 @@ body {
     font-family: 'Mistuki 4 PERSONALUSE';
     font-size: 103px;
     font-weight: 400;
-    line-height: 100;
+    line-height: 100px;
     right: 300px;
-    bottom: 200px; }
+    bottom: 200px;
+    color: white;
+    text-shadow: 0px 0px 5px black; }
 
 .slider {
   width: 100%;
@@ -236,6 +250,193 @@ body {
 .space {
   min-width: 140px;
   width: 140px; }
+
+.time-line {
+  padding-left: 140px;
+  padding-right: 140px;
+  background-image: url("../img/time-line/vector-smart-object.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  position: relative; }
+  .time-line:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 182px;
+    width: 1px;
+    height: 100%;
+    border-left: 18px solid #dec85b;
+    box-sizing: border-box; }
+  .time-line .time-item {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 340px; }
+    .time-line .time-item div img {
+      max-width: 480px;
+      width: 100%; }
+    .time-line .time-item .year {
+      min-width: 100px;
+      width: 100px;
+      height: 100px;
+      background-image: linear-gradient(-42deg, #f4d47d 0%, #c88139 100%);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Montserrat-SemiBold";
+      font-size: 26px;
+      font-weight: 500;
+      line-height: 36px;
+      color: #282828; }
+    .time-line .time-item .description {
+      min-width: 200px;
+      max-width: 200px; }
+      .time-line .time-item .description span {
+        display: inline-block;
+        font-family: 'Montserrat-Light';
+        border-top: 3px solid #dec85b;
+        font-size: 26px;
+        font-weight: 500;
+        line-height: 46px;
+        color: #ffffff;
+        letter-spacing: 0.88px;
+        padding-top: 65px; }
+    .time-line .time-item .content {
+      max-width: 610px;
+      width: 100%; }
+      .time-line .time-item .content h2 {
+        font-family: "Mistuki 1 PERSONALUSE";
+        font-size: 80px;
+        font-weight: 400;
+        line-height: 107px;
+        margin-top: -25px;
+        margin-bottom: 37px;
+        color: white; }
+      .time-line .time-item .content p {
+        color: #cbb9b9;
+        font-family: 'Montserrat-Light';
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 36px; }
+      .time-line .time-item .content .bottom-content {
+        font-family: 'Montserrat-Light';
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 46px;
+        letter-spacing: 0.88px;
+        color: white; }
+      .time-line .time-item .content .separate {
+        padding-left: 60px;
+        box-sizing: border-box;
+        position: relative; }
+        .time-line .time-item .content .separate:before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          width: 3px;
+          height: 90%;
+          border-left: 3px solid #dec85b; }
+        .time-line .time-item .content .separate h4 {
+          font-family: 'Montserrat-Light';
+          font-size: 26px;
+          font-weight: 500;
+          line-height: 36px;
+          letter-spacing: 0.88px;
+          color: white; }
+        .time-line .time-item .content .separate h2 {
+          font-family: 'Mistuki 4 PERSONALUSE';
+          font-size: 80px;
+          font-weight: 400;
+          line-height: 74px; }
+
+.white-time-item {
+  padding-left: 140px;
+  padding-right: 140px;
+  position: relative;
+  background-color: #ffffff;
+  padding-top: 120px;
+  padding-bottom: 145px;
+  background-image: url("../img/time-line/gold-hill-front-view.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: auto 80%;
+  display: flex;
+  justify-content: space-between; }
+  .white-time-item:before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 182px;
+    width: 1px;
+    height: 140px;
+    border-left: 18px solid #dec85b;
+    box-sizing: border-box; }
+  .white-time-item .year {
+    position: relative;
+    min-width: 100px;
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(-42deg, #f4d47d 0%, #c88139 100%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat-SemiBold";
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 36px;
+    color: #282828; }
+  .white-time-item .description {
+    display: flex;
+    justify-content: flex-end;
+    width: 30%; }
+    .white-time-item .description span {
+      display: inline-block;
+      font-family: 'Montserrat-Light';
+      border-top: 3px solid #dec85b;
+      font-size: 26px;
+      font-weight: 600;
+      line-height: 46px;
+      color: #282828;
+      max-width: 150px;
+      letter-spacing: 0.88px;
+      padding-top: 65px; }
+  .white-time-item .content {
+    max-width: 600px;
+    width: 100%; }
+    .white-time-item .content h2 {
+      font-family: "Mistuki 1 PERSONALUSE";
+      font-size: 80px;
+      font-weight: 400;
+      line-height: 84px;
+      color: #282828;
+      margin-top: -25px; }
+    .white-time-item .content div {
+      font-family: 'Montserrat-Light';
+      font-size: 26px;
+      font-weight: 600;
+      line-height: 36px;
+      letter-spacing: 0.88px;
+      padding-left: 60px;
+      position: relative;
+      max-width: 170px; }
+      .white-time-item .content div:before {
+        position: absolute;
+        content: "";
+        top: 5%;
+        left: 0;
+        width: 1;
+        height: 90%;
+        border-left: 3px solid #dec85b; }
+    .white-time-item .content p {
+      color: #756b6b;
+      font-family: 'Montserrat-Light';
+      font-size: 17px;
+      line-height: 36px; }
 
 .darkItem {
   padding-top: 160px;
@@ -625,6 +826,28 @@ body {
   color: #8b8b8b;
   padding-top: 40px; }
 
+.footer-links {
+  padding-left: 135px;
+  padding-right: 135px;
+  box-sizing: border-box; }
+  .footer-links div {
+    min-height: 140px;
+    width: 100%;
+    border-bottom: 1px solid #363636;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .footer-links div a {
+      font-family: "Montserrat-SemiBold";
+      font-size: 14px;
+      line-height: 55px;
+      display: inline-block;
+      color: #d1ad62;
+      letter-spacing: 3.92px;
+      text-decoration: none;
+      text-transform: uppercase;
+      border-bottom: 3px solid #d1ad62; }
+
 @media (max-width: 1900px) {
   .milestones .hill .bloker {
     height: 37.5vw; } }
@@ -640,7 +863,12 @@ body {
   .items-collection .item img {
     width: 380px; }
   .milestones h2 {
-    padding-left: 5%; } }
+    padding-left: 5%; }
+  .time-line, .white-time-item {
+    padding-left: 30px;
+    padding-right: 30px; }
+    .time-line:before, .white-time-item:before {
+      left: 69px; } }
 
 @media (max-width: 1500px) {
   .darkItem {
@@ -670,7 +898,20 @@ body {
       margin-bottom: 80px; }
   .items-container {
     padding-top: 70px;
-    padding-bottom: 0px; } }
+    padding-bottom: 0px; }
+  .time-line .time-item {
+    flex-direction: column;
+    padding-left: 170px;
+    padding-bottom: 100px; }
+    .time-line .time-item .year {
+      position: absolute;
+      left: 0; }
+    .time-line .time-item .description span {
+      padding-top: 20px;
+      padding-bottom: 20px; }
+    .time-line .time-item .content {
+      max-width: 95%;
+      margin-bottom: 20px; } }
 
 @media (max-width: 1370px) {
   .head-container .space {
@@ -686,7 +927,9 @@ body {
     .darkItem .image div {
       display: none; }
   .darkItem .content p {
-    max-width: 100%; } }
+    max-width: 100%; }
+  .white-time-item {
+    background-size: auto 50%; } }
 
 @media (max-width: 1200px) {
   .head-container .menu ul {
@@ -742,7 +985,7 @@ body {
         border-bottom: 3px solid white; }
       .head-container .menu ul li a {
         color: white; }
-    .head-container .slider {
+    .head-container .slider, .head-container .header-static {
       margin-top: 0px; }
     .head-container .vertical-text {
       opacity: 0; }
@@ -760,7 +1003,27 @@ body {
       z-index: 1; }
   .darkItem {
     width: 95%;
-    margin: auto; } }
+    margin: auto; }
+  .white-time-item {
+    flex-direction: column;
+    padding-left: 160px;
+    padding-bottom: 250px;
+    background-size: 50%; }
+    .white-time-item .year {
+      position: absolute;
+      left: 30px; }
+    .white-time-item .description {
+      display: block;
+      width: 100%; }
+      .white-time-item .description span {
+        padding-top: 20px;
+        padding-bottom: 30px;
+        max-width: 100%; }
+    .white-time-item .content {
+      max-width: 95%; }
+      .white-time-item .content h2 {
+        margin-top: 0px;
+        margin-bottom: 20px; } }
 
 @media (max-width: 1000px) {
   .whiteItem img {
@@ -776,7 +1039,16 @@ body {
   .sm {
     flex-direction: row; }
   .whiteItem .content .title {
-    padding-left: 20px; } }
+    padding-left: 20px; }
+  .header-static img {
+    width: 100%; }
+  .header-static .text {
+    right: 20px; }
+  .left-text {
+    padding-left: 5%;
+    width: 95%;
+    box-sizing: border-box;
+    max-width: 100%; } }
 
 @media (max-width: 600px) {
   .sm .darkItem {
@@ -829,7 +1101,30 @@ body {
     bottom: 100px; }
   .footer .navigation ul li a {
     line-height: 30px;
-    font-size: 2vw; } }
+    font-size: 2vw; }
+  .header-static .text {
+    font-size: 20vw; }
+  .time-line .time-item {
+    padding-left: 120px; }
+    .time-line .time-item .content .separate {
+      padding-left: 0px; }
+      .time-line .time-item .content .separate:before {
+        display: none; }
+      .time-line .time-item .content .separate h4 {
+        font-size: 3vw;
+        line-height: 3.5vw; }
+    .time-line .time-item .content h2, .time-line .time-item .content .separate h2 {
+      font-size: 8vw;
+      line-height: 9vw; }
+  .white-time-item .description {
+    font-size: 4vw;
+    line-height: 4.5vw; }
+  .white-time-item .content h2 {
+    font-size: 9vw;
+    line-height: 9.5vw; }
+  .footer-links {
+    padding-left: 5%;
+    padding-right: 5%; } }
 
 input#menuSwitch[type=checkbox]:checked ~ ul {
   display: flex !important; }
