@@ -6,6 +6,7 @@ body {
   font-family: 'Montserrat-Light';
   //background-color: #000000;
   //background: linear-gradient(to bottom right, #0f0e0f, #4a4949);
+  background-color: black;
   background-image: url('../img/ground.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -112,6 +113,30 @@ body {
   }
 }
 
+.header-static{
+  width: 100%;
+  position: relative;
+  min-height: 760px;
+  box-sizing: border-box;
+  margin-top: 114px;;
+  img {
+    position: absolute;
+    background-color: black;
+    object-fit: cover;
+    width: calc(100% - 140px);
+    height: 100%;
+  }
+  .text{
+    display: block;
+    position: absolute;
+    font-family: 'Mistuki 4 PERSONALUSE';
+    font-size: 103px;
+    font-weight: 400;
+    line-height: 100;
+    right: 300px;
+    bottom: 200px;
+  }
+}
 .slider {
   width: 100%;
   //border: 1px solid white;
