@@ -1147,7 +1147,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    position: relative;
+    .line{
+      border: 2px solid #dec85b;
+      z-index: 10;
+      border-radius: 2px;
+    }
     img{
       position: relative;
     }
@@ -1217,8 +1222,14 @@ body {
     right: 200px;
     top:150px;
     list-style: none;
+    width: 300px;
+    li{
+      position: absolute;
+      left: 0;
+    }
     .info{
-      //position: absolute;
+      position: relative;
+      display: none;
       max-width: 350px;
       width: 100%;
       //right: -200px;
@@ -1250,6 +1261,118 @@ body {
           border-left: 3px solid #dec85b;
         }
       }
+    }
+  }
+  li:nth-of-type(1){
+    top:0px;
+  }
+  li:nth-of-type(2){
+    top:250px;
+  }
+  li:nth-of-type(3){
+    top:500px;
+  }
+}
+
+.white-room{
+  background-color: white;
+  background-image: url("../img/white_bg.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
+  padding-top: 100px;
+  padding-bottom: 110px;
+  padding-left: 170px;
+  padding-right: 170px;
+  display: flex;
+  justify-content: space-between;
+  .name{
+    max-width: 150px;
+    padding-top: 50px;
+    font-family: 'Montserrat-Light';
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 36px;
+    letter-spacing: 0.88px;
+    color: #282828;
+    border-top: 3px solid #dec85b;
+  }
+  .content{
+    max-width: 550px;
+    width: 100%;
+    h2{
+      margin-top: 0px;
+      margin-bottom: 40px;
+      font-family: 'Mistuki 4 PERSONALUSE';
+      font-size: 80px;
+      line-height: 74px;
+      color: #282828;
+      font-weight: 500;
+    }
+    p{
+      font-family: 'Montserrat-Light';
+      font-size: 17px;
+      line-height: 36px;
+      color: #756b6b;
+    }
+  }
+  .images{
+    img{
+      padding-left: 20px;
+      max-width: 321px;
+    }
+  }
+}
+
+.transparent-room{
+  padding-bottom: 100px;
+  padding-top: 100px;
+  width: 60%;
+  margin:auto;
+  display: flex;
+  justify-content: space-between;
+  .name{
+    padding-top: 50px;
+    font-family: 'Montserrat-Light';
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 36px;
+    letter-spacing: 0.88px;
+    color: #fff;
+    border-top: 3px solid #dec85b;
+    max-width: 250px;
+  }
+  .content{
+    max-width: 550px;
+    h2{
+      margin-top: 0px;
+      margin-bottom: 40px;
+      font-family: 'Mistuki 4 PERSONALUSE';
+      font-size: 80px;
+      line-height: 74px;
+      color: #ffffff;
+      font-weight: 500;
+    }
+    p{
+      font-family: 'Montserrat-Light';
+      font-size: 17px;
+      line-height: 36px;
+      color: #ffffff;
+    }
+  }
+  .toch{
+    display: flex;
+    align-items: flex-end;
+    a{
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #d1ad62;
+      display: block;
+      border-bottom: 3px solid #d1ad62;
+      letter-spacing: 3.92px;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 65px;
     }
   }
 }
