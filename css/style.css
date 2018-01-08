@@ -915,6 +915,107 @@ body {
     opacity: 1;
     transform: translateY(0); } }
 
+.journey {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  position: relative; }
+  .journey .text {
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    font-family: 'Montserrat-Light';
+    font-size: 17px;
+    line-height: 36px;
+    color: #756b6b;
+    max-width: 450px;
+    width: 100%; }
+  .journey .content {
+    max-width: 620px;
+    width: 100%;
+    margin-top: 190px;
+    margin-bottom: 170px;
+    height: 100%;
+    background-image: url("../img/j3_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .journey .content img {
+      position: relative; }
+    .journey .content img:nth-of-type(1) {
+      max-width: 450px;
+      top: -87px;
+      right: 26px; }
+    .journey .content img:nth-of-type(2) {
+      max-width: 586px;
+      right: -137px;
+      top: 27px; }
+    .journey .content img:nth-of-type(3) {
+      max-width: 586px;
+      bottom: -140px;
+      left: -70px; }
+    .journey .content .points {
+      position: absolute;
+      z-index: 10;
+      padding-left: 0; }
+      .journey .content .points li {
+        list-style: none; }
+        .journey .content .points li input {
+          width: 0;
+          height: 0; }
+        .journey .content .points li label {
+          display: block;
+          background-color: rgba(255, 255, 255, 0.5);
+          height: 20px;
+          width: 20px;
+          position: absolute;
+          z-index: 11;
+          border-radius: 50%;
+          box-sizing: border-box;
+          animation: pulse 2s infinite; }
+        .journey .content .points li label:nth-of-type(2) {
+          top: 138px;
+          left: 80px; }
+        .journey .content .points li label:nth-of-type(3) {
+          top: 280px;
+          left: -10px; }
+  .journey .infos {
+    position: absolute;
+    right: 200px;
+    top: 150px;
+    list-style: none; }
+    .journey .infos .info {
+      max-width: 350px;
+      width: 100%;
+      margin-bottom: 50px; }
+      .journey .infos .info h4 {
+        font-family: 'Montserrat-Light';
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 36px;
+        color: #ffffff;
+        margin: 0;
+        margin-bottom: 20px; }
+      .journey .infos .info div {
+        font-family: 'Montserrat-Light';
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 36px;
+        color: #ffffff;
+        padding-left: 35px;
+        position: relative; }
+        .journey .infos .info div:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 5%;
+          height: 90%;
+          width: 1px;
+          border-left: 3px solid #dec85b; }
+
 .grey {
   background-color: #252525; }
 
