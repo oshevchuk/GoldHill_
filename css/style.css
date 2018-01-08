@@ -198,7 +198,7 @@ body {
         justify-content: space-between; }
         .slider .slide .slide-content div label {
           font-family: 'Montserrat-Light';
-          font-size: 26px;
+          font-size: 28px;
           font-weight: 600;
           line-height: 55px;
           color: white; }
@@ -947,7 +947,7 @@ body {
     align-items: center;
     position: relative; }
     .journey .content .line {
-      border: 2px solid #dec85b;
+      border: 1px solid #dec85b;
       z-index: 10;
       border-radius: 2px; }
     .journey .content img {
