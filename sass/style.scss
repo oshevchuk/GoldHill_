@@ -128,7 +128,8 @@ body {
 .header-static {
   width: 100%;
   position: relative;
-  min-height: 760px;
+  //min-height: 760px;
+  min-height: 670px;
   box-sizing: border-box;
   margin-top: 114px;;
   img {
@@ -155,7 +156,8 @@ body {
 .slider {
   width: 100%;
   //border: 1px solid white;
-  min-height: 763px;
+  //min-height: 763px;
+  min-height: 670px;
   position: relative;
   box-sizing: border-box;
   margin-top: 114px;;
@@ -232,6 +234,7 @@ body {
     z-index: 2;
   }
   .controls {
+    display: none!important;
     position: absolute;
     top: 0;
     right: 0;
@@ -799,6 +802,7 @@ body {
         text-decoration: none;
         padding-left: 58px;
         padding-bottom: 20px;
+        text-transform: capitalize;
       }
       .text {
         //display: none;
