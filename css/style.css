@@ -24,6 +24,8 @@
   src: url("../fonts/mans-greback/Mistuki4_PERSONAL_USE.ttf"); }
 
 body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   margin: 0;
   padding: 0;
   font-family: 'Montserrat-Light';
@@ -577,7 +579,6 @@ body {
       top: 125px; }
 
 .whiteItem {
-  background-image: url("../img/goldhill5-01-------2.png");
   background-repeat: no-repeat;
   background-position: left top;
   position: relative;
@@ -1220,7 +1221,12 @@ body {
     .time-line:before, .white-time-item:before {
       left: 69px; }
   .milestones.type2 .hill .bloker .channel {
-    left: 10%; } }
+    left: 10%; }
+  .white-room {
+    padding-right: 5%;
+    padding-left: 5%; }
+  .transparent-room {
+    width: 90%; } }
 
 @media (max-width: 1500px) {
   .darkItem {
@@ -1289,7 +1295,17 @@ body {
       line-height: 1.8vw; }
     .milestones.type2 .hill .bloker .channel > div > p {
       font-size: 1.2vw;
-      line-height: 1.8vw; } }
+      line-height: 1.8vw; }
+  .white-room {
+    flex-direction: column; }
+    .white-room .name {
+      max-width: 260px; }
+    .white-room .content {
+      max-width: 100%;
+      margin-bottom: 20px; }
+    .white-room .images {
+      display: flex;
+      justify-content: space-around; } }
 
 @media (max-width: 1370px) {
   .head-container .space {
@@ -1433,7 +1449,13 @@ body {
     padding-left: 5%;
     width: 95%;
     box-sizing: border-box;
-    max-width: 100%; } }
+    max-width: 100%; }
+  .transparent-room {
+    flex-direction: column; }
+    .transparent-room .name {
+      max-width: 450px; }
+    .transparent-room .content {
+      max-width: 100%; } }
 
 @media (max-width: 600px) {
   .sm .darkItem {
@@ -1509,7 +1531,12 @@ body {
     line-height: 9.5vw; }
   .footer-links {
     padding-left: 5%;
-    padding-right: 5%; } }
+    padding-right: 5%; }
+  .white-room .images {
+    flex-direction: column;
+    align-items: center; }
+    .white-room .images img {
+      margin-bottom: 20px; } }
 
 input#menuSwitch[type=checkbox]:checked ~ ul {
   display: flex !important; }

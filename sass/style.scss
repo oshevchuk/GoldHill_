@@ -1,6 +1,8 @@
 @import "fonts";
 
 body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   margin: 0;
   padding: 0;
   font-family: 'Montserrat-Light';
@@ -664,7 +666,7 @@ body {
 }
 
 .whiteItem {
-  background-image: url('../img/goldhill5-01-------2.png');
+  //background-image: url('../img/goldhill5-01-------2.png');
   background-repeat: no-repeat;
   background-position: left top;
   position: relative;
@@ -1517,6 +1519,13 @@ body {
   .milestones.type2 .hill .bloker .channel {
     left: 10%;
   }
+  .white-room{
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+  .transparent-room{
+    width: 90%;
+  }
 }
 
 @media (max-width: 1500px) {
@@ -1616,6 +1625,22 @@ body {
     & > p {
       font-size: 1.2vw;
       line-height: 1.8vw;
+    }
+  }
+  .white-room{
+    flex-direction: column;
+    .name{
+      max-width: 260px;
+    }
+    .content{
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+    .images{
+      display: flex;
+      justify-content: space-around;
+      img{
+      }
     }
   }
 }
@@ -1846,6 +1871,15 @@ body {
     box-sizing: border-box;
     max-width: 100%;
   }
+  .transparent-room{
+    flex-direction: column;
+    .name{
+      max-width: 450px;
+    }
+    .content{
+      max-width: 100%;
+    }
+  }
 }
 
 @media (max-width: 600px) {
@@ -1985,6 +2019,15 @@ body {
   .footer-links {
     padding-left: 5%;
     padding-right: 5%;
+  }
+  .white-room{
+    .images{
+      flex-direction: column;
+      align-items: center;
+      img{
+        margin-bottom: 20px;
+      }
+    }
   }
 }
 
