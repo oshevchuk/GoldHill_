@@ -842,6 +842,7 @@ body {
     .milestones.type2 .hill .bloker {
       height: 1070px; }
       .milestones.type2 .hill .bloker .channel {
+        display: none !important;
         position: absolute;
         bottom: 10%;
         left: 300px;
