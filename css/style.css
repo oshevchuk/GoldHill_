@@ -953,9 +953,10 @@ body {
     align-items: center;
     position: relative; }
     .journey .content .line {
-      border: 1px solid #dec85b;
+      border: 1.5px solid #dec85b;
       z-index: 10;
-      border-radius: 2px; }
+      border-radius: 2px;
+      opacity: 0.5; }
     .journey .content img {
       position: relative; }
     .journey .content img:nth-of-type(1) {

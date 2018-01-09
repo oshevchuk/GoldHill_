@@ -52,7 +52,7 @@ $('.lined').click(function (e) {
     var line_to=$('#'+$(this).data('target'));
     line_to.show();
     
-    createLine($(e.target).offset().left+6, $(e.target).offset().top, line_to.offset().left-2, line_to.offset().top+line_to.height()-6);
+    createLine($(e.target).offset().left+9, $(e.target).offset().top+3, line_to.offset().left, line_to.offset().top+line_to.height()-7);
 });
 
 $(window).on('resize', function () {

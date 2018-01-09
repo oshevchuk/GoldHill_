@@ -1155,9 +1155,10 @@ body {
     align-items: center;
     position: relative;
     .line{
-      border: 1px solid #dec85b;
+      border: 1.5px solid #dec85b;
       z-index: 10;
       border-radius: 2px;
+      opacity: 0.5;
     }
     img{
       position: relative;
