@@ -1220,6 +1220,8 @@ body {
     padding-right: 30px; }
     .time-line:before, .white-time-item:before {
       left: 69px; }
+    .time-line .description, .white-time-item .description {
+      width: 45%; }
   .milestones.type2 .hill .bloker .channel {
     left: 10%; }
   .white-room {
@@ -1305,7 +1307,9 @@ body {
       margin-bottom: 20px; }
     .white-room .images {
       display: flex;
-      justify-content: space-around; } }
+      justify-content: space-around; }
+  .white-time-item {
+    background-size: auto 70%; } }
 
 @media (max-width: 1370px) {
   .head-container .space {
@@ -1323,7 +1327,9 @@ body {
   .darkItem .content p {
     max-width: 100%; }
   .white-time-item {
-    background-size: auto 50%; } }
+    background-size: auto 50%; }
+    .white-time-item .description {
+      width: 30%; } }
 
 @media (max-width: 1200px) {
   .head-container .menu ul {

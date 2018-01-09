@@ -1515,6 +1515,9 @@ body {
     &:before {
       left: 69px;
     }
+    .description{
+      width: 45%;
+    }
   }
   .milestones.type2 .hill .bloker .channel {
     left: 10%;
@@ -1643,6 +1646,9 @@ body {
       }
     }
   }
+  .white-time-item{
+    background-size: auto 70%;
+  }
 }
 
 @media (max-width: 1370px) {
@@ -1672,6 +1678,9 @@ body {
   }
   .white-time-item {
     background-size: auto 50%;
+    .description{
+      width: 30%;
+    }
   }
 }
 
