@@ -560,6 +560,8 @@ body {
   }
   &.type2 {
     .content {
+      position: relative;
+      z-index:1;
       .as_comment {
         padding-left: 40px;
         position: relative;
@@ -851,6 +853,7 @@ body {
     font-weight: 400;
     line-height: 74px;
     color: #ffffff;
+    margin-bottom: 0px;
   }
   .hill {
     width: 100%;
@@ -950,7 +953,7 @@ body {
         bottom: 14%;
         .radio-mask {
           left: -9px;
-          top: 0px;;
+          top: 4px;;
         }
       }
       #point2 {
@@ -958,7 +961,7 @@ body {
         bottom: 24%;
         .radio-mask {
           left: 2px;
-          top: 0px;;
+          top: 2px;;
         }
       }
       #point3 {
@@ -1460,7 +1463,14 @@ body {
   }
 }
 
-@media (max-width: 1900px) {
+@media (max-width: 1920px) {
+  .milestones .hill .hill-captions {
+    #point1{
+      .radio-mask {
+        //top: 2px;;
+      }
+    }
+  }
   .milestones .hill .bloker, .milestones.type2 .hill .hill-captions {
     height: 37.5vw;
   }
