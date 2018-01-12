@@ -1467,6 +1467,27 @@ body {
   }
 }
 
+.wide-text{
+  font-family: 'Montserrat-Light';
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  margin:auto;
+  margin-bottom: 60px;
+  width: 80%;
+}
+
+.milestones{
+  .wide-text{
+    font-size: 16px;
+    line-height: 28px;
+    margin-left: 5%;
+    width: 60%;
+    max-width: 700px;
+  }
+}
+
 @media (max-width: 1920px) {
   .milestones .hill .hill-captions {
     #point1{
