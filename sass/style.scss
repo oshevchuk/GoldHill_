@@ -125,6 +125,234 @@ body {
       }
     }
   }
+  &.register-type{
+    .menu{
+      min-height: auto;
+    }
+  }
+}
+.rz{
+  background-image: url('../img/v3bg.png');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+.register-zone{
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 200px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  .picture{
+    position: relative;
+    //display: flex;
+    img{
+      max-width: 650px;
+      object-fit: contain;
+    }
+    .im1{
+      position: absolute;
+      bottom:70%;
+      left: 10%;
+      width: 55%;
+    }
+    .im2{
+      position: absolute;
+      right: -10%;
+      top: 40%;
+      width: 55%;
+    }
+  }
+  .register-form{
+    max-width: 700px;
+    width: 100%;
+    h2{
+      font-family: 'Mistuki 4 PERSONALUSE';
+      color: white;
+      font-weight: 500;
+      font-size: 103px;
+      line-height: 100px;
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
+    p{
+      display: block;
+      color: #cbb9b9;
+      font-family: 'Montserrat-Light';
+      font-size: 17px;
+      line-height: 36px;
+      padding-left: 60px;
+      position: relative;
+      &:before{
+        display: block;
+        content: "";
+        top:7%;
+        left: 0;
+        position: absolute;
+        height: 90%;
+        width: 2px;
+        border-left: 3px solid #dec85b;
+      }
+    }
+    form{
+      overflow: hidden;
+      fieldset{
+        margin:0;
+        padding: 0;
+        border: 0;
+        position: relative;
+        min-height: 50px;
+        span{
+          display: block;
+          width: 100%;
+          font-family: "Montserrat-SemiBold";
+          font-size: 14px;
+          color: #cbb9b9;
+          letter-spacing: 3.92px;
+          text-transform: uppercase;
+        }
+        input{
+          margin-top: 10px;
+          display: block;
+          width: 100%;
+          height: 40px;
+          padding: 22px 8px;
+          padding-bottom: 5px;
+          border: 0;
+          outline: 0;
+          background-color: transparent;
+          border-bottom: 3px solid #cbb9b9;
+          margin-top: 10px;
+          box-sizing: content-box;
+          color: white;
+          font-size: 20px;
+        }
+        label{
+          font-family: "Montserrat-SemiBold";
+          position: absolute;
+          top:35px;
+          left: 0px;
+          transform: translate3d(0,0,0);
+          transition: 0.2s;
+          color: #cbb9b9;
+          font-size: 14px;
+          letter-spacing: 3.92px;
+          text-transform: uppercase;
+        }
+
+        input {
+          &:valid,
+          &:focus {
+            padding: 22px 8px 10px;
+            padding-bottom: 5px;
+          }
+          &:focus {
+            outline: 0;
+            background-color: transparent;
+          }
+          &[data-empty="false"] + label,
+          &:valid + label,
+          &:focus + label {
+            color: #cbb9b9;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 11px;
+            transform: translate3d(0, -12px, 0);
+          }
+        }
+        textarea{
+          margin-top: 15px;
+          background-color: transparent;
+          border: 3px solid #cbb9b9;
+          width: 100%;
+          box-sizing: border-box;
+          color: white;
+          font-size: 20px;
+        }
+      }
+      & > div{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 90px;
+        padding-bottom: 50px;
+        div{
+          width: 100%;
+          font-family: 'Montserrat-Light';
+          font-size: 26px;
+          letter-spacing: 0.88px;
+          font-weight: 500;
+          color: #cbb9b9;
+
+          input{
+            position: relative;
+            width: 0;
+            height: 0;
+            margin-right: 30px;
+            &:before{
+              opacity: 1;
+              content: "";
+              position: absolute;
+              width: 19px;
+              height: 19px;
+              border: 3px solid #dec85b;
+              bottom: 0px;;
+              left:0;
+              display: block;
+            }
+            &:checked:before{
+              background-color: #dec85b;
+            }
+          }
+        }
+      }
+      .get{
+        color: #d1ad62;
+        background-color: transparent;
+        border: none;
+        border-bottom: 3px solid #d1ad62;
+        font-family: "Montserrat-SemiBold";
+        font-size: 14px;
+        line-height: 90px;
+        letter-spacing: 3.92px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.learn{
+  width: 70%;
+  margin: auto;
+  h2{
+    font-family: 'Mistuki 4 PERSONALUSE';
+    color: white;
+    font-size: 100px;
+    line-height: 100px;
+    font-weight: 400;
+  }
+  ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 80px;
+    margin-bottom: 0px;
+    li {
+      display: block;
+      border-bottom: 3px solid #d1ad62;
+      a {
+        text-decoration: none;
+        color: #d1ad62;
+        line-height: 70px;
+        font-size: 14px;
+        letter-spacing: 3.9px;
+        text-transform: uppercase;
+        font-family: "Montserrat-SemiBold";
+      }
+    }
+  }
 }
 
 .header-static {
@@ -1796,6 +2024,29 @@ body {
       }
     }
   }
+  .register-zone{
+    .picture{
+      max-width: 300px;
+      img:first-child{
+        display: none;
+      }
+      img{
+        position: relative;
+        &.im1,  &.im2{
+          position: relative;
+          margin-bottom: 10px;
+          //max-width: 500px;
+          width: 80%;
+          right: auto;
+          left: auto;
+
+        }
+      }
+    }
+    .register-form{
+      max-width: 100%;
+    }
+  }
 }
 
 @media (max-width: 1370px) {
@@ -1990,6 +2241,18 @@ body {
           width: 100%;
         }
       }
+    }
+  }
+  .register-zone{
+    padding-top: 100px;
+    .picture{
+      display: none;
+    }
+  }
+  .learn{
+    width: 90%;
+    h2 {
+      font-size: 9vw;
     }
   }
 }
