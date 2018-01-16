@@ -288,6 +288,44 @@ body {
         letter-spacing: 3.92px;
         text-transform: uppercase; }
 
+.start-with {
+  max-width: 750px;
+  margin: auto;
+  padding-top: 130px;
+  padding-bottom: 120px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between; }
+  .start-with p {
+    font-family: 'Montserrat-Light';
+    display: block;
+    font-weight: 600;
+    padding-left: 70px;
+    font-size: 26px;
+    color: white;
+    letter-spacing: 0.88px;
+    line-height: 52px;
+    text-transform: uppercase;
+    position: relative;
+    max-width: 375px; }
+    .start-with p:before {
+      content: "";
+      position: absolute;
+      top: 7%;
+      height: 90%;
+      left: 0;
+      width: 1px;
+      border-left: 3px solid #dec85b; }
+  .start-with a {
+    display: block;
+    text-decoration: none;
+    font-family: "Montserrat-SemiBold";
+    font-size: 14px;
+    line-height: 80px;
+    letter-spacing: 3.9px;
+    border-bottom: 3px solid #d1ad62;
+    color: #d1ad62; }
+
 .learn {
   width: 70%;
   margin: auto; }
@@ -726,6 +764,8 @@ body {
     .darkItem.type2 .image img {
       max-width: 400px;
       width: 100%; }
+  .darkItem.room .image {
+    max-width: 550px; }
   .darkItem.revert {
     padding-left: 140px;
     padding-right: 140px; }
@@ -737,6 +777,53 @@ body {
         text-transform: uppercase; }
     .darkItem.revert .image {
       max-width: 550px; }
+
+.rooms {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 140px;
+  padding-right: 140px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  align-items: flex-start; }
+  .rooms img {
+    max-width: 400px; }
+  .rooms .content {
+    width: 65%;
+    display: flex;
+    margin-top: 70px; }
+    .rooms .content .name {
+      margin-right: 70px;
+      font-family: 'Montserrat-Light';
+      font-size: 26px;
+      line-height: 46px;
+      font-weight: 600;
+      color: #282828;
+      padding-top: 60px;
+      border-top: 3px solid #dec85b; }
+    .rooms .content .on_list h2 {
+      font-family: 'Mistuki 1 PERSONALUSE';
+      font-size: 80px;
+      font-weight: 400;
+      color: #282828;
+      margin-top: 0px;
+      margin-bottom: 30px; }
+    .rooms .content .on_list div {
+      display: flex; }
+      .rooms .content .on_list div ul {
+        list-style: none;
+        padding-left: 0px;
+        width: 100%; }
+        .rooms .content .on_list div ul li {
+          font-family: 'Montserrat-Light';
+          font-size: 17px;
+          line-height: 36px;
+          color: #282828;
+          font-weight: 600; }
+          .rooms .content .on_list div ul li span {
+            color: #d1ad62;
+            display: inline-block;
+            min-width: 30px; }
 
 .white {
   background-color: white; }
@@ -1633,7 +1720,10 @@ body {
         right: auto;
         left: auto; }
   .register-zone .register-form {
-    max-width: 100%; } }
+    max-width: 100%; }
+  .rooms {
+    padding-left: 5%;
+    padding-right: 5%; } }
 
 @media (max-width: 1370px) {
   .head-container .space {
@@ -1659,7 +1749,12 @@ body {
   .white-time-item {
     background-size: auto 50%; }
     .white-time-item .description {
-      width: 30%; } }
+      width: 30%; }
+  .rooms {
+    flex-direction: column;
+    align-items: center; }
+    .rooms .content {
+      width: 100%; } }
 
 @media (max-width: 1200px) {
   .head-container .menu ul {
@@ -1801,7 +1896,11 @@ body {
     .transparent-room .name {
       max-width: 450px; }
     .transparent-room .content {
-      max-width: 100%; } }
+      max-width: 100%; }
+  .rooms .content {
+    flex-direction: column; }
+    .rooms .content .name {
+      max-width: 200px; } }
 
 @media (max-width: 600px) {
   .sm .darkItem {
@@ -1884,7 +1983,16 @@ body {
     .white-room .images img {
       margin-bottom: 20px; }
   .darkItem .name {
-    white-space: inherit; } }
+    white-space: inherit; }
+  .rooms .content .on_list div {
+    flex-direction: column; }
+    .rooms .content .on_list div ul {
+      margin: 0; }
+  .start-with {
+    padding-left: 5%;
+    padding-right: 5%;
+    flex-direction: column;
+    align-items: center; } }
 
 input#menuSwitch[type=checkbox]:checked ~ ul {
   display: flex !important; }
