@@ -518,6 +518,9 @@ body {
     padding-top: 55px;
     margin-top: 28px;
   }
+  .name.fix-name{
+    width: 250px;;
+  }
   .content {
     h2 {
       font-family: "Mistuki 1 PERSONALUSE";
@@ -536,6 +539,18 @@ body {
       font-size: 17px;
       display: block;
       max-width: 550px;
+    }
+    .details{
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #d1ad62;
+      letter-spacing: 3.92px;
+      font-size: 14px;
+      font-family: 'Montserrat-Light';
+      display: inline-block;
+      font-weight: 600;
+      line-height: 55px;
+      border-bottom: 2px solid #d1ad62;
     }
   }
   .image {
@@ -594,7 +609,27 @@ body {
       }
     }
   }
+
+  &.revert{
+    padding-left: 140px;
+    padding-right: 140px;
+    .content{
+      h2{
+        color: #282828;
+      }
+    }
+    .name{
+      color: #282828;
+      span{
+        text-transform: uppercase;
+      }
+    }
+    .image{
+      max-width: 550px;
+    }
+  }
 }
+
 
 .white {
   background-color: white;
@@ -725,6 +760,10 @@ body {
       font-size: 17px;
       max-width: 550px;
     }
+  }
+  &.typeAsDarkRevert{
+    padding-left: 140px;
+    padding-right: 140px;
   }
 }
 
@@ -1488,6 +1527,72 @@ body {
   }
 }
 
+.generations{
+  padding-top: 190px;
+  padding-bottom: 150px;
+  padding-left: 140px;
+  padding-right: 140px;
+  display: flex;
+  justify-content: space-between;
+  background-image: url('../img/v3bg.png');
+  background-repeat: no-repeat;
+  background-size: auto 70%;
+  background-position: bottom right;
+  .name{
+    font-family: 'Montserrat-Light';
+    font-weight: 600;
+    letter-spacing: 0.88px;
+    line-height: 46px;
+    font-size: 26px;
+    color: #ffffff;
+    min-width: 180px;
+    width: 240px;
+    border-top: 3px solid #dec85b;
+    padding-top: 55px;
+    margin-top: 28px;
+  }
+  .content{
+    width: 70%;
+    h2{
+      font-family: "Mistuki 1 PERSONALUSE";
+      font-size: 80px;
+      font-weight: 400;
+      line-height: 108px;
+      margin-top: 0px;
+      margin-bottom: 34px;
+      color: #ffffff;
+    }
+    ul, .list{
+      color: #ffffff;
+      font-family: 'Montserrat-Light';
+      line-height: 46px;
+      font-weight: 600;
+      font-size: 17px;
+      display: flex;
+      list-style: none;
+      padding-left: 0;
+      flex-wrap: wrap;
+      width: 100%;
+      li{
+        box-sizing: border-box;
+        width: 50%;
+        display: block;
+        position: relative;
+        padding-left: 40px;
+        &:before{
+          content: "";
+          position: absolute;
+          width: 22px;
+          height: 1px;
+          border-top: 3px solid #dec85b;
+          left: 0;
+          top:50%;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 1920px) {
   .milestones .hill .hill-captions {
     #point1{
@@ -1551,6 +1656,14 @@ body {
   }
   .transparent-room{
     width: 90%;
+  }
+  .darkItem.revert{
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+  .generations{
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
 
@@ -1672,6 +1785,17 @@ body {
   .white-time-item{
     background-size: auto 70%;
   }
+  .generations{
+    padding-top: 90px;
+    padding-bottom: 100px;
+    flex-direction: column;
+    .content{
+      width: 100%;
+      h2{
+        margin-top: 20px;
+      }
+    }
+  }
 }
 
 @media (max-width: 1370px) {
@@ -1689,6 +1813,8 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
+      max-width: 100%;
+      margin-bottom: 20px;
       div {
         display: none;
       }
@@ -1697,6 +1823,14 @@ body {
       p {
         max-width: 100%;
       }
+    }
+    &.revert, &.type2{
+      .image {
+        max-width: 100%;
+      }
+    }
+    &.type2.revert{
+      padding-top: 100px;
     }
   }
   .white-time-item {
@@ -1847,6 +1981,15 @@ body {
     .images {
       width: 100%;
       margin-bottom: 150px;
+    }
+  }
+  .generations{
+    .content{
+      ul{
+        li{
+          width: 100%;
+        }
+      }
     }
   }
 }
@@ -2060,6 +2203,9 @@ body {
         margin-bottom: 20px;
       }
     }
+  }
+  .darkItem .name{
+    white-space: inherit;
   }
 }
 
