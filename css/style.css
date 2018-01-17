@@ -156,137 +156,138 @@ body {
       right: -10%;
       top: 40%;
       width: 55%; }
-  .register-zone .register-form {
-    max-width: 700px;
-    width: 100%; }
-    .register-zone .register-form h2 {
-      font-family: 'Mistuki 4 PERSONALUSE';
-      color: white;
-      font-weight: 500;
-      font-size: 103px;
-      line-height: 100px;
-      margin-top: 0;
-      margin-bottom: 30px; }
-    .register-zone .register-form p {
+
+.register-form {
+  max-width: 700px;
+  width: 100%; }
+  .register-form h2 {
+    font-family: 'Mistuki 4 PERSONALUSE';
+    color: white;
+    font-weight: 500;
+    font-size: 103px;
+    line-height: 100px;
+    margin-top: 0;
+    margin-bottom: 30px; }
+  .register-form p {
+    display: block;
+    color: #cbb9b9;
+    font-family: 'Montserrat-Light';
+    font-size: 17px;
+    line-height: 36px;
+    padding-left: 60px;
+    position: relative; }
+    .register-form p:before {
       display: block;
-      color: #cbb9b9;
-      font-family: 'Montserrat-Light';
-      font-size: 17px;
-      line-height: 36px;
-      padding-left: 60px;
-      position: relative; }
-      .register-zone .register-form p:before {
+      content: "";
+      top: 7%;
+      left: 0;
+      position: absolute;
+      height: 90%;
+      width: 2px;
+      border-left: 3px solid #dec85b; }
+  .register-form form {
+    overflow: hidden; }
+    .register-form form fieldset {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      position: relative;
+      min-height: 50px; }
+      .register-form form fieldset span {
         display: block;
-        content: "";
-        top: 7%;
-        left: 0;
-        position: absolute;
-        height: 90%;
-        width: 2px;
-        border-left: 3px solid #dec85b; }
-    .register-zone .register-form form {
-      overflow: hidden; }
-      .register-zone .register-form form fieldset {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        position: relative;
-        min-height: 50px; }
-        .register-zone .register-form form fieldset span {
-          display: block;
-          width: 100%;
-          font-family: "Montserrat-SemiBold";
-          font-size: 14px;
-          color: #cbb9b9;
-          letter-spacing: 3.92px;
-          text-transform: uppercase; }
-        .register-zone .register-form form fieldset input {
-          margin-top: 10px;
-          display: block;
-          width: 100%;
-          height: 40px;
-          padding: 22px 8px;
-          padding-bottom: 5px;
-          border: 0;
-          outline: 0;
-          background-color: transparent;
-          border-bottom: 3px solid #cbb9b9;
-          margin-top: 10px;
-          box-sizing: content-box;
-          color: white;
-          font-size: 20px; }
-        .register-zone .register-form form fieldset label {
-          font-family: "Montserrat-SemiBold";
-          position: absolute;
-          top: 35px;
-          left: 0px;
-          transform: translate3d(0, 0, 0);
-          transition: 0.2s;
-          color: #cbb9b9;
-          font-size: 14px;
-          letter-spacing: 3.92px;
-          text-transform: uppercase; }
-        .register-zone .register-form form fieldset input:valid, .register-zone .register-form form fieldset input:focus {
-          padding: 22px 8px 10px;
-          padding-bottom: 5px; }
-        .register-zone .register-form form fieldset input:focus {
-          outline: 0;
-          background-color: transparent; }
-        .register-zone .register-form form fieldset input[data-empty="false"] + label,
-        .register-zone .register-form form fieldset input:valid + label,
-        .register-zone .register-form form fieldset input:focus + label {
-          color: #cbb9b9;
-          text-transform: uppercase;
-          font-weight: 700;
-          font-size: 11px;
-          transform: translate3d(0, -12px, 0); }
-        .register-zone .register-form form fieldset textarea {
-          margin-top: 15px;
-          background-color: transparent;
-          border: 3px solid #cbb9b9;
-          width: 100%;
-          box-sizing: border-box;
-          color: white;
-          font-size: 20px; }
-      .register-zone .register-form form > div {
-        display: flex;
-        justify-content: space-between;
-        padding-top: 90px;
-        padding-bottom: 50px; }
-        .register-zone .register-form form > div div {
-          width: 100%;
-          font-family: 'Montserrat-Light';
-          font-size: 26px;
-          letter-spacing: 0.88px;
-          font-weight: 500;
-          color: #cbb9b9; }
-          .register-zone .register-form form > div div input {
-            position: relative;
-            width: 0;
-            height: 0;
-            margin-right: 30px; }
-            .register-zone .register-form form > div div input:before {
-              opacity: 1;
-              content: "";
-              position: absolute;
-              width: 19px;
-              height: 19px;
-              border: 3px solid #dec85b;
-              bottom: 0px;
-              left: 0;
-              display: block; }
-            .register-zone .register-form form > div div input:checked:before {
-              background-color: #dec85b; }
-      .register-zone .register-form form .get {
-        color: #d1ad62;
-        background-color: transparent;
-        border: none;
-        border-bottom: 3px solid #d1ad62;
+        width: 100%;
         font-family: "Montserrat-SemiBold";
         font-size: 14px;
-        line-height: 90px;
+        color: #cbb9b9;
         letter-spacing: 3.92px;
         text-transform: uppercase; }
+      .register-form form fieldset input {
+        margin-top: 10px;
+        display: block;
+        width: 100%;
+        height: 40px;
+        padding: 22px 8px;
+        padding-bottom: 5px;
+        border: 0;
+        outline: 0;
+        background-color: transparent;
+        border-bottom: 3px solid #cbb9b9;
+        margin-top: 10px;
+        box-sizing: content-box;
+        color: white;
+        font-size: 20px; }
+      .register-form form fieldset label {
+        font-family: "Montserrat-SemiBold";
+        position: absolute;
+        top: 35px;
+        left: 0px;
+        transform: translate3d(0, 0, 0);
+        transition: 0.2s;
+        color: #cbb9b9;
+        font-size: 14px;
+        letter-spacing: 3.92px;
+        text-transform: uppercase; }
+      .register-form form fieldset input:valid, .register-form form fieldset input:focus {
+        padding: 22px 8px 10px;
+        padding-bottom: 5px; }
+      .register-form form fieldset input:focus {
+        outline: 0;
+        background-color: transparent; }
+      .register-form form fieldset input[data-empty="false"] + label,
+      .register-form form fieldset input:valid + label,
+      .register-form form fieldset input:focus + label {
+        color: #cbb9b9;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 11px;
+        transform: translate3d(0, -12px, 0); }
+      .register-form form fieldset textarea {
+        margin-top: 15px;
+        background-color: transparent;
+        border: 3px solid #cbb9b9;
+        width: 100%;
+        box-sizing: border-box;
+        color: white;
+        font-size: 20px; }
+    .register-form form > div {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 90px;
+      padding-bottom: 50px; }
+      .register-form form > div div {
+        width: 100%;
+        font-family: 'Montserrat-Light';
+        font-size: 26px;
+        letter-spacing: 0.88px;
+        font-weight: 500;
+        color: #cbb9b9; }
+        .register-form form > div div input {
+          position: relative;
+          width: 0;
+          height: 0;
+          margin-right: 30px; }
+          .register-form form > div div input:before {
+            opacity: 1;
+            content: "";
+            position: absolute;
+            width: 19px;
+            height: 19px;
+            border: 3px solid #dec85b;
+            bottom: 0px;
+            left: 0;
+            display: block; }
+          .register-form form > div div input:checked:before {
+            background-color: #dec85b; }
+    .register-form form .get {
+      color: #d1ad62;
+      background-color: transparent;
+      border: none;
+      border-bottom: 3px solid #d1ad62;
+      font-family: "Montserrat-SemiBold";
+      font-size: 14px;
+      line-height: 90px;
+      letter-spacing: 3.92px;
+      text-transform: uppercase; }
 
 .start-with {
   max-width: 750px;
@@ -1722,6 +1723,93 @@ body {
       padding-bottom: 20px;
       margin-top: 50px; }
 
+.contact .header-static {
+  width: 90%; }
+  .contact .header-static img {
+    width: 960px;
+    height: 760px; }
+  .contact .header-static .contact-zone {
+    color: white;
+    position: absolute;
+    top: 10%;
+    right: 40px;
+    width: 38%; }
+    .contact .header-static .contact-zone h2 {
+      font-family: "Mistuki 4 PERSONALUSE";
+      font-size: 100px;
+      line-height: 100px;
+      font-weight: 400;
+      margin: 0; }
+    .contact .header-static .contact-zone > div {
+      display: flex;
+      justify-content: space-between; }
+      .contact .header-static .contact-zone > div h4 {
+        font-family: "Montserrat-SemiBold";
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 46px;
+        letter-spacing: 0.88px; }
+      .contact .header-static .contact-zone > div a {
+        display: inline-block;
+        margin-top: 20px;
+        font-family: "Montserrat-SemiBold";
+        font-size: 14px;
+        text-transform: uppercase;
+        line-height: 50px;
+        letter-spacing: 3.9px;
+        color: white;
+        border-bottom: 3px solid white;
+        text-decoration: none; }
+
+.contact-form {
+  background-image: url("../img/v3bg.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  padding-left: 10%;
+  padding-right: 10%; }
+  .contact-form .content {
+    display: flex;
+    justify-content: space-between; }
+    .contact-form .content > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+    .contact-form .content .left {
+      width: 45%;
+      color: white; }
+      .contact-form .content .left ul {
+        list-style: none;
+        padding-left: 0; }
+        .contact-form .content .left ul li h5 {
+          font-family: "Montserrat-SemiBold";
+          font-weight: 400;
+          font-size: 26px;
+          line-height: 46px;
+          letter-spacing: 0.88px;
+          margin-bottom: 0px; }
+        .contact-form .content .left ul li p {
+          color: #cbb9b9;
+          font-size: 17px;
+          line-height: 36px;
+          font-family: 'Montserrat-Light';
+          margin-top: 0px; }
+    .contact-form .content .right {
+      width: 45%;
+      padding-top: 30px; }
+    .contact-form .content .btn {
+      margin-top: 50px;
+      display: inline-block;
+      color: #d1ad62;
+      border-bottom: 2px solid #d1ad62;
+      font-family: 'Montserrat-Light';
+      font-weight: 700;
+      line-height: 60px;
+      text-decoration: none;
+      position: relative;
+      text-transform: uppercase; }
+
 @media (max-width: 1920px) {
   .milestones .hill .bloker, .milestones.type2 .hill .hill-captions {
     height: 37.5vw; }
@@ -1762,7 +1850,11 @@ body {
     padding-left: 5%; }
   .generations {
     padding-left: 5%;
-    padding-right: 5%; } }
+    padding-right: 5%; }
+  .contact * {
+    color: black; }
+  .contact .header-static .contact-zone {
+    width: 660px; } }
 
 @media (max-width: 1500px) {
   .darkItem {
@@ -1939,7 +2031,11 @@ body {
   .footer .navigation ul {
     display: block; }
     .footer .navigation ul li {
-      display: inline-block; } }
+      display: inline-block; }
+  .contact .header-static {
+    width: 100%; }
+    .contact .header-static img {
+      width: 100%; } }
 
 @media (max-width: 1000px) {
   .journey-room {
@@ -2078,7 +2174,11 @@ body {
       max-width: 200px; }
   .journey {
     padding-left: 4%;
-    padding-right: 4%; } }
+    padding-right: 4%; }
+  .contact-form .content {
+    flex-direction: column; }
+    .contact-form .content .left, .contact-form .content .right {
+      width: 100%; } }
 
 @media (max-width: 600px) {
   .sm .darkItem {
@@ -2170,7 +2270,13 @@ body {
     padding-left: 5%;
     padding-right: 5%;
     flex-direction: column;
-    align-items: center; } }
+    align-items: center; }
+  .contact .header-static .contact-zone {
+    right: auto;
+    padding-left: 5%;
+    width: 100%; }
+    .contact .header-static .contact-zone > div {
+      flex-direction: column; } }
 
 input#menuSwitch[type=checkbox]:checked ~ ul {
   display: flex !important; }
