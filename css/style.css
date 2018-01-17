@@ -1332,120 +1332,69 @@ body {
   padding-top: 100px;
   padding-bottom: 100px;
   display: flex;
-  justify-content: center;
-  position: relative; }
+  padding-left: 140px;
+  padding-right: 140px;
+  position: relative;
+  flex-direction: column; }
   .journey .text {
-    position: absolute;
     top: 150px;
     left: 150px;
     font-family: 'Montserrat-Light';
     font-size: 17px;
     line-height: 36px;
     color: #756b6b;
-    max-width: 450px;
+    max-width: 770px;
     width: 100%; }
-  .journey .content {
-    max-width: 620px;
-    width: 100%;
-    margin-top: 190px;
-    margin-bottom: 170px;
-    height: 100%;
-    background-image: url("../img/j3_bg.png");
+  .journey .slider .mask {
+    background-color: transparent;
+    background-image: url("../img/header_bg.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: left center;
+    background-size: auto 400px; }
+  .journey .slider .controls {
+    display: flex !important; }
+  .journey .slider .slide {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    position: relative; }
-    .journey .content .line {
-      border: 1.5px solid #dec85b;
-      z-index: 10;
-      border-radius: 2px;
-      opacity: 0.5; }
-    .journey .content img {
-      position: relative; }
-    .journey .content img:nth-of-type(1) {
-      max-width: 450px;
-      top: -87px;
-      right: 26px; }
-    .journey .content img:nth-of-type(2) {
-      max-width: 586px;
-      right: -137px;
-      top: 27px; }
-    .journey .content img:nth-of-type(3) {
-      max-width: 586px;
-      bottom: -140px;
-      left: -70px; }
-    .journey .content .points {
-      position: absolute;
-      z-index: 10;
-      padding-left: 0; }
-      .journey .content .points li {
-        list-style: none; }
-        .journey .content .points li input {
-          width: 0;
-          height: 0; }
-        .journey .content .points li label {
-          display: block;
-          background-color: rgba(255, 255, 255, 0.5);
-          height: 20px;
-          width: 20px;
-          position: absolute;
-          z-index: 11;
-          border-radius: 50%;
-          box-sizing: border-box;
-          animation: pulse 2s infinite; }
-        .journey .content .points li label:nth-of-type(2) {
-          top: 138px;
-          left: 80px; }
-        .journey .content .points li label:nth-of-type(3) {
-          top: 280px;
-          left: -10px; }
-  .journey .infos {
-    position: absolute;
-    right: 200px;
-    top: 150px;
-    list-style: none;
-    width: 300px; }
-    .journey .infos li {
-      position: absolute;
-      left: 0; }
-    .journey .infos .info {
-      position: relative;
-      display: none;
-      max-width: 350px;
-      width: 100%;
-      margin-bottom: 50px; }
-      .journey .infos .info h4 {
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 10%; }
+    .journey .slider .slide img {
+      max-width: 660px;
+      height: 618px; }
+    .journey .slider .slide .slide-content {
+      right: 2%; }
+      .journey .slider .slide .slide-content h2 {
+        font-size: 80px;
+        line-height: 74px; }
+      .journey .slider .slide .slide-content div {
         font-family: 'Montserrat-Light';
-        font-weight: 600;
-        font-size: 26px;
-        line-height: 36px;
-        color: #ffffff;
-        margin: 0;
-        margin-bottom: 20px; }
-      .journey .infos .info div {
-        font-family: 'Montserrat-Light';
-        font-weight: 400;
+        color: white;
         font-size: 17px;
         line-height: 36px;
-        color: #ffffff;
-        padding-left: 35px;
+        font-weight: 400;
+        padding-left: 40px;
         position: relative; }
-        .journey .infos .info div:before {
+        .journey .slider .slide .slide-content div:before {
+          border-left: 3px solid #dec85b;
           content: "";
+          display: block;
           position: absolute;
-          left: 0;
           top: 5%;
-          height: 90%;
-          width: 1px;
-          border-left: 3px solid #dec85b; }
-  .journey li:nth-of-type(1) {
-    top: 0px; }
-  .journey li:nth-of-type(2) {
-    top: 250px; }
-  .journey li:nth-of-type(3) {
-    top: 500px; }
+          left: 0;
+          height: 90%; }
+  .journey .slider .controls {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    width: 200px;
+    top: auto;
+    bottom: 20%;
+    right: 20%; }
+    .journey .slider .controls div {
+      color: white; }
+      .journey .slider .controls div span {
+        color: #d1ad62; }
 
 .white-room {
   background-color: white;
@@ -1679,6 +1628,61 @@ body {
           border-top: 3px solid #dec85b;
           left: 0;
           top: 50%; }
+
+.journey-room {
+  padding: 140px;
+  display: flex;
+  justify-content: space-between; }
+  .journey-room img {
+    width: 55%; }
+  .journey-room .content {
+    width: 40%;
+    color: white;
+    padding-top: 40px; }
+    .journey-room .content div {
+      padding-left: 70px;
+      position: relative; }
+      .journey-room .content div span {
+        font-family: 'Montserrat-Light';
+        font-size: 26px;
+        line-height: 36px;
+        letter-spacing: 0.88px;
+        font-weight: 500; }
+      .journey-room .content div h2 {
+        font-family: "Mistuki 4 PERSONALUSE";
+        font-size: 80px;
+        line-height: 74px;
+        font-weight: 400;
+        margin: 0; }
+      .journey-room .content div:before {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 5%;
+        left: 0;
+        height: 90%;
+        width: 1px;
+        border-left: 3px solid #dec85b; }
+    .journey-room .content p {
+      display: block;
+      margin-top: 50px;
+      font-family: 'Montserrat-Light';
+      font-size: 17px;
+      line-height: 36px;
+      color: white;
+      font-weight: 400; }
+    .journey-room .content a {
+      display: inline-block;
+      text-decoration: none;
+      border-bottom: 3px solid #d1ad62;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-family: "Montserrat-SemiBold";
+      font-weight: 400;
+      letter-spacing: 3.9px;
+      color: #d1ad62;
+      padding-bottom: 20px;
+      margin-top: 50px; }
 
 @media (max-width: 1920px) {
   .milestones .hill .bloker, .milestones.type2 .hill .hill-captions {
@@ -2015,7 +2019,10 @@ body {
   .rooms .content {
     flex-direction: column; }
     .rooms .content .name {
-      max-width: 200px; } }
+      max-width: 200px; }
+  .journey {
+    padding-left: 4%;
+    padding-right: 4%; } }
 
 @media (max-width: 600px) {
   .sm .darkItem {
