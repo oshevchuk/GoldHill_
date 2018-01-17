@@ -883,6 +883,11 @@ body {
     .image{
       max-width: 550px;
     }
+    .content{
+      p{
+        max-width: 600px;
+      }
+    }
   }
   &.revert{
     padding-left: 140px;
@@ -910,7 +915,7 @@ body {
   padding-left: 140px;
   padding-right: 140px;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 160px;
   align-items: flex-start;
   img{
     max-width: 400px;
@@ -940,6 +945,8 @@ body {
       }
       div{
         display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
         ul{
           list-style: none;
           padding-left: 0px;
@@ -954,6 +961,33 @@ body {
               color: #d1ad62;
               display: inline-block;
               min-width: 30px;
+            }
+          }
+        }
+        a{
+          margin-top: 20px;
+          font-family: 'Montserrat-SemiBold';
+          display: block;
+          color: #d1ad62;
+          font-size: 14px;
+          line-height: 60px;
+          border-bottom: 3px solid #d1ad62;
+          text-transform: uppercase;
+          letter-spacing: 3.9px;
+          text-decoration: none;
+          &:last-child{
+            position: relative;
+            &:before{
+              content: '';
+              display: block;
+              background-image: url('../img/download.png');
+              width: 39px;
+              height: 38px;
+              position: absolute;
+              left: -70px;
+              bottom: 0;
+              background-repeat: no-repeat;
+              background-size: cover;
             }
           }
         }
@@ -1948,6 +1982,7 @@ body {
   padding: 140px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   img{
     width: 55%;
   }
@@ -2029,6 +2064,10 @@ body {
 }
 
 @media (max-width: 1800px) {
+  .journey-room{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
   .head-container {
     .space {
       width: 20px;
@@ -2344,7 +2383,12 @@ body {
 }
 
 @media (max-width: 1000px) {
-
+  .journey-room{
+    flex-direction: column;
+    .content{
+      width: 100%;
+    }
+  }
   .slider .slide .slide-content {
     right: auto;
     left: 40px;

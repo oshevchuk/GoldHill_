@@ -766,6 +766,8 @@ body {
       width: 100%; }
   .darkItem.room .image {
     max-width: 550px; }
+  .darkItem.room .content p {
+    max-width: 600px; }
   .darkItem.revert {
     padding-left: 140px;
     padding-right: 140px; }
@@ -784,7 +786,7 @@ body {
   padding-left: 140px;
   padding-right: 140px;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 160px;
   align-items: flex-start; }
   .rooms img {
     max-width: 400px; }
@@ -809,7 +811,9 @@ body {
       margin-top: 0px;
       margin-bottom: 30px; }
     .rooms .content .on_list div {
-      display: flex; }
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px; }
       .rooms .content .on_list div ul {
         list-style: none;
         padding-left: 0px;
@@ -824,6 +828,30 @@ body {
             color: #d1ad62;
             display: inline-block;
             min-width: 30px; }
+      .rooms .content .on_list div a {
+        margin-top: 20px;
+        font-family: 'Montserrat-SemiBold';
+        display: block;
+        color: #d1ad62;
+        font-size: 14px;
+        line-height: 60px;
+        border-bottom: 3px solid #d1ad62;
+        text-transform: uppercase;
+        letter-spacing: 3.9px;
+        text-decoration: none; }
+        .rooms .content .on_list div a:last-child {
+          position: relative; }
+          .rooms .content .on_list div a:last-child:before {
+            content: '';
+            display: block;
+            background-image: url("../img/download.png");
+            width: 39px;
+            height: 38px;
+            position: absolute;
+            left: -70px;
+            bottom: 0;
+            background-repeat: no-repeat;
+            background-size: cover; }
 
 .white {
   background-color: white; }
@@ -1632,7 +1660,8 @@ body {
 .journey-room {
   padding: 140px;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center; }
   .journey-room img {
     width: 55%; }
   .journey-room .content {
@@ -1691,6 +1720,9 @@ body {
     height: 56vw; } }
 
 @media (max-width: 1800px) {
+  .journey-room {
+    padding-left: 5%;
+    padding-right: 5%; }
   .head-container .space {
     width: 20px;
     min-width: 20px; }
@@ -1897,6 +1929,10 @@ body {
       display: inline-block; } }
 
 @media (max-width: 1000px) {
+  .journey-room {
+    flex-direction: column; }
+    .journey-room .content {
+      width: 100%; }
   .slider .slide .slide-content {
     right: auto;
     left: 40px; }
