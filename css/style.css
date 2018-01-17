@@ -779,6 +779,8 @@ body {
         text-transform: uppercase; }
     .darkItem.revert .image {
       max-width: 550px; }
+  .darkItem.exclusive {
+    flex-direction: row-reverse; }
 
 .rooms {
   display: flex;
@@ -852,6 +854,13 @@ body {
             bottom: 0;
             background-repeat: no-repeat;
             background-size: cover; }
+  .rooms.exclusive {
+    flex-direction: row-reverse;
+    padding-bottom: 60px; }
+    .rooms.exclusive .content {
+      justify-content: space-between; }
+      .rooms.exclusive .content .name {
+        max-width: 160px; }
 
 .white {
   background-color: white; }
@@ -1766,6 +1775,10 @@ body {
       width: 320px;
       width: -moz-max-content;
       white-space: nowrap; }
+    .darkItem.exclusive .image {
+      right: auto;
+      top: auto;
+      position: relative; }
   .whiteItem {
     justify-content: space-around;
     padding-bottom: 80px;
@@ -1980,6 +1993,8 @@ body {
   .darkItem {
     width: 95%;
     margin: auto; }
+    .darkItem.exclusive .image {
+      display: none; }
   .white-time-item {
     flex-direction: column;
     padding-left: 160px;
@@ -2020,7 +2035,12 @@ body {
   .building-time .items li {
     width: 100%; }
     .building-time .items li ul {
-      width: 100%; } }
+      width: 100%; }
+  .rooms.exclusive {
+    flex-direction: column; }
+    .rooms.exclusive .content .name {
+      max-width: 270px;
+      margin-bottom: 20px; } }
 
 @media (max-width: 1000px) {
   .whiteItem img {

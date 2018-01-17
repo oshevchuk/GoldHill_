@@ -907,6 +907,9 @@ body {
       max-width: 550px;
     }
   }
+  &.exclusive{
+    flex-direction: row-reverse;
+  }
 }
 
 .rooms{
@@ -991,6 +994,16 @@ body {
             }
           }
         }
+      }
+    }
+  }
+  &.exclusive{
+    flex-direction: row-reverse;
+    padding-bottom: 60px;
+    .content{
+      justify-content: space-between;
+      .name{
+        max-width: 160px;
       }
     }
   }
@@ -2134,6 +2147,13 @@ body {
       width: -moz-max-content;
       white-space: nowrap;
     }
+    &.exclusive{
+      .image{
+        right: auto;
+        top: auto;
+      position: relative;
+      }
+    }
   }
 
   .whiteItem {
@@ -2455,6 +2475,11 @@ body {
   .darkItem {
     width: 95%;
     margin: auto;
+    &.exclusive {
+      .image {
+        display: none;
+      }
+    }
   }
   .white-time-item {
     flex-direction: column;
@@ -2519,6 +2544,15 @@ body {
         ul{
           width: 100%;
         }
+      }
+    }
+  }
+  .rooms.exclusive{
+    flex-direction: column;
+    .content{
+      .name{
+        max-width: 270px;
+        margin-bottom: 20px;
       }
     }
   }
