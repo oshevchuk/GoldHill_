@@ -94,11 +94,29 @@ body {
     max-width: 1120px;
     min-height: 752px;
     width: calc(100% - 145px); }
+    .head-container .menu .menu-sw {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .head-container .menu .menu-sw .language {
+        width: 155px;
+        text-align: center;
+        right: 20px;
+        top: 30px;
+        color: black;
+        font-family: "Montserrat-SemiBold";
+        font-size: 16px; }
+        .head-container .menu .menu-sw .language a {
+          color: black;
+          text-decoration: none; }
+        .head-container .menu .menu-sw .language a.active {
+          color: white;
+          font-size: 20px; }
     .head-container .menu input, .head-container .menu label {
       display: none; }
     .head-container .menu ul {
       padding-left: 0px;
-      width: calc(100% - 145px);
+      width: calc(100%);
       display: flex;
       align-items: center;
       justify-content: space-around;
@@ -692,7 +710,8 @@ body {
     padding-top: 55px;
     margin-top: 28px; }
   .darkItem .name.fix-name {
-    width: 250px; }
+    width: 250px;
+    margin-right: 45px; }
   .darkItem .content h2 {
     font-family: "Mistuki 1 PERSONALUSE";
     color: white;
@@ -739,6 +758,8 @@ body {
       position: absolute;
       top: -40px;
       right: 10%; }
+  .darkItem.type2 .name {
+    padding-top: 108px; }
   .darkItem.type2 .content {
     position: relative;
     z-index: 1; }
@@ -1472,9 +1493,12 @@ body {
       font-size: 17px;
       line-height: 36px;
       color: #756b6b; }
-  .white-room .images img {
-    padding-left: 20px;
-    max-width: 321px; }
+  .white-room .images {
+    display: flex; }
+    .white-room .images img {
+      padding-left: 20px;
+      max-width: 321px;
+      object-fit: cover; }
 
 .transparent-room {
   padding-bottom: 100px;
@@ -1726,7 +1750,8 @@ body {
 .contact .header-static {
   width: 90%; }
   .contact .header-static img {
-    width: 960px;
+    max-width: 960px;
+    width: 45%;
     height: 760px; }
   .contact .header-static .contact-zone {
     color: white;
@@ -1851,8 +1876,6 @@ body {
   .generations {
     padding-left: 5%;
     padding-right: 5%; }
-  .contact * {
-    color: black; }
   .contact .header-static .contact-zone {
     width: 660px; } }
 
@@ -2006,7 +2029,9 @@ body {
     flex-direction: column;
     align-items: center; }
     .rooms .content {
-      width: 100%; } }
+      width: 100%; }
+  .contact .header-static img {
+    width: 33%; } }
 
 @media (max-width: 1200px) {
   .head-container .menu ul {
@@ -2035,7 +2060,8 @@ body {
   .contact .header-static {
     width: 100%; }
     .contact .header-static img {
-      width: 100%; } }
+      width: 100%;
+      display: none; } }
 
 @media (max-width: 1000px) {
   .journey-room {
@@ -2077,8 +2103,7 @@ body {
     .head-container .menu-sw {
       position: absolute;
       right: 45px;
-      top: 35px;
-      min-height: 140px; }
+      min-height: 115px; }
       .head-container .menu-sw label {
         position: relative;
         z-index: 101;
