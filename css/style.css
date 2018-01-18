@@ -1776,11 +1776,12 @@ body {
   text-align: center; }
 
 .milestones .wide-text {
-  font-size: 16px;
+  font-size: 15px;
   line-height: 28px;
   margin-left: 5%;
   width: 60%;
-  max-width: 700px; }
+  max-width: 700px;
+  text-align: left; }
 
 .generations {
   padding-top: 190px;
