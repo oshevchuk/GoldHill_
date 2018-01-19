@@ -18,7 +18,9 @@ function check_view() {
         var element_bottom_position=(element_top_position+element_height);
 
         if((element_bottom_position>=window_top_position) && (element_top_position<=window_bottom_position)){
-            $element.addClass('show');
+            setTimeout(function () {
+                $element.addClass('show');
+            }, 400);
         }else{
             // $element.removeClass('show');
         }
