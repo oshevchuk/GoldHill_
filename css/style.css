@@ -1455,6 +1455,155 @@ body {
       .journey .slider .controls div span {
         color: #d1ad62; }
 
+.the_journey {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  position: relative; }
+  .the_journey .text {
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    font-family: 'Montserrat-Light';
+    font-size: 17px;
+    line-height: 36px;
+    color: #756b6b;
+    max-width: 450px;
+    width: 100%; }
+  .the_journey .content {
+    max-width: 620px;
+    width: 100%;
+    margin-top: 190px;
+    margin-bottom: 170px;
+    height: 100%;
+    background-image: url("../img/j3_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; }
+    .the_journey .content .line {
+      border: 1.5px solid #dec85b;
+      z-index: 10;
+      border-radius: 2px;
+      opacity: 0.5; }
+    .the_journey .content img {
+      position: relative; }
+    .the_journey .content img:nth-of-type(1) {
+      max-width: 450px;
+      top: -87px;
+      right: 26px; }
+    .the_journey .content .points {
+      position: absolute;
+      z-index: 10;
+      padding-left: 0; }
+      .the_journey .content .points li {
+        list-style: none; }
+        .the_journey .content .points li input {
+          width: 0;
+          height: 0; }
+        .the_journey .content .points li label {
+          display: block;
+          background-color: rgba(255, 255, 255, 0.9);
+          height: 20px;
+          width: 20px;
+          position: absolute;
+          z-index: 11;
+          border-radius: 50%;
+          box-sizing: border-box;
+          animation: pulse 2s infinite; }
+        .the_journey .content .points li label:nth-of-type(2) {
+          top: 138px;
+          left: 80px; }
+        .the_journey .content .points li label:nth-of-type(3) {
+          top: 280px;
+          left: -10px; }
+    .the_journey .content .set {
+      position: relative; }
+      .the_journey .content .set ul {
+        top: 0;
+        left: 50%; }
+      .the_journey .content .set:nth-of-type(2) img {
+        max-width: 586px;
+        right: -137px;
+        top: 27px; }
+      .the_journey .content .set:nth-of-type(2) .points label:nth-of-type(1) {
+        top: 180px;
+        left: 175px; }
+      .the_journey .content .set:nth-of-type(2) .points label:nth-of-type(2) {
+        top: 280px;
+        left: 0px; }
+      .the_journey .content .set:nth-of-type(3) img {
+        max-width: 586px;
+        top: 80px;
+        left: -70px; }
+      .the_journey .content .set:nth-of-type(3) .points label:nth-of-type(1) {
+        top: 180px;
+        left: -150px; }
+      .the_journey .content .set:nth-of-type(3) .points label:nth-of-type(2) {
+        top: 320px;
+        left: 170px; }
+  .the_journey .infos {
+    position: absolute;
+    right: 200px;
+    top: 150px;
+    list-style: none;
+    width: 300px; }
+    .the_journey .infos li {
+      position: absolute;
+      left: 0; }
+    .the_journey .infos .info {
+      position: relative;
+      display: none;
+      max-width: 350px;
+      width: 100%;
+      margin-bottom: 50px; }
+      .the_journey .infos .info h4 {
+        font-family: 'Montserrat-Light';
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 36px;
+        color: #ffffff;
+        margin: 0;
+        margin-bottom: 20px; }
+      .the_journey .infos .info div {
+        font-family: 'Montserrat-Light';
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 36px;
+        color: #ffffff;
+        padding-left: 35px;
+        position: relative; }
+        .the_journey .infos .info div:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 5%;
+          height: 90%;
+          width: 1px;
+          border-left: 3px solid #dec85b; }
+      .the_journey .infos .info.reverse div {
+        padding-left: 0;
+        padding-right: 35px; }
+        .the_journey .infos .info.reverse div:before {
+          left: auto;
+          right: 0px; }
+    .the_journey .infos:nth-of-type(2) {
+      top: 34%;
+      right: auto;
+      left: 5%; }
+    .the_journey .infos:nth-of-type(3) {
+      top: auto;
+      bottom: 34%; }
+  .the_journey li:nth-of-type(1) {
+    top: 0px; }
+  .the_journey li:nth-of-type(2) {
+    top: 250px; }
+  .the_journey li:nth-of-type(3) {
+    top: 500px; }
+
 .white-room {
   background-color: white;
   background-image: url("../img/white_bg.png");
@@ -1623,14 +1772,16 @@ body {
   line-height: 30px;
   margin: auto;
   margin-bottom: 60px;
-  width: 80%; }
+  width: 80%;
+  text-align: center; }
 
 .milestones .wide-text {
-  font-size: 16px;
+  font-size: 15px;
   line-height: 28px;
   margin-left: 5%;
   width: 60%;
-  max-width: 700px; }
+  max-width: 700px;
+  text-align: left; }
 
 .generations {
   padding-top: 190px;

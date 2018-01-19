@@ -49,10 +49,16 @@ $(document).ready(function(){
 
 $('.lined').click(function (e) {
     console.log(">>", $(this).data('target'));
-    var line_to=$('#'+$(this).data('target'));
-    line_to.show();
     
-    createLine($(e.target).offset().left+9, $(e.target).offset().top+3, line_to.offset().left, line_to.offset().top+line_to.height()-7);
+    
+    var line_to=$('#'+$(this).data('target'));
+            line_to.show();
+
+    if(line_to.hasClass('reverse')){
+        createLine($(e.target).offset().left + 9, $(e.target).offset().top + 3, line_to.offset().left + line_to.width()-4, line_to.offset().top + line_to.height() - 7);
+    }else {
+        createLine($(e.target).offset().left + 9, $(e.target).offset().top + 3, line_to.offset().left, line_to.offset().top + line_to.height() - 7);
+    }
 });
 
 $(window).on('resize', function () {
