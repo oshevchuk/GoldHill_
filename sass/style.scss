@@ -1169,6 +1169,18 @@ body {
       font-size: 17px;
       max-width: 550px;
     }
+    .details{
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #d1ad62;
+      letter-spacing: 3.92px;
+      font-size: 14px;
+      font-family: 'Montserrat-Light';
+      display: inline-block;
+      font-weight: 600;
+      line-height: 55px;
+      border-bottom: 2px solid #d1ad62;
+    }
   }
   &.typeAsDarkRevert{
     padding-left: 140px;
@@ -3210,6 +3222,71 @@ body {
     }
   }
 }
+
+
+@media (max-width: 400px) {
+  .head-container {
+    .menu {
+      min-height: 90vw;
+      .menu-sw {
+        position: static;
+        label {
+          margin-left: 15px;
+        }
+      }
+    }
+    .header-static{
+      min-height: 100vw;
+    }
+  }
+
+  .darkItem{
+    .content {
+      h2 {
+        font-size: 10vw;
+        line-height: 11vw;
+      }
+    }
+  }
+  .timeline-caption{
+    * {
+      box-sizing: border-box;
+    }
+    margin-top: 100px;
+    h2{
+      font-size: 10vw;
+      line-height: 11vw;
+    }
+  }
+  .building-time{
+    .period{
+      li{
+        font-size: 5vw;
+        line-height: 5.5vw;
+      }
+    }
+  }
+  .head-container.contact{
+    .menu{
+      min-height: 100px;
+    }
+  }
+  .content{
+    .contact-form{
+      .content{
+        .left{
+          ul{
+            padding-top: 200px;
+          }
+        }
+      }
+    }
+  }
+  .learn ul{
+    flex-direction: column;
+  }
+}
+
 
 input#menuSwitch[type=checkbox]:checked ~ ul {
   display: flex !important;
