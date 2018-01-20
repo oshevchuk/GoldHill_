@@ -991,6 +991,17 @@ body {
       font-weight: 600;
       font-size: 17px;
       max-width: 550px; }
+    .whiteItem .content .details {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #d1ad62;
+      letter-spacing: 3.92px;
+      font-size: 14px;
+      font-family: 'Montserrat-Light';
+      display: inline-block;
+      font-weight: 600;
+      line-height: 55px;
+      border-bottom: 2px solid #d1ad62; }
   .whiteItem.typeAsDarkRevert {
     padding-left: 140px;
     padding-right: 140px; }
@@ -2453,6 +2464,35 @@ body {
     width: 100%; }
     .contact .header-static .contact-zone > div {
       flex-direction: column; } }
+
+@media (max-width: 400px) {
+  .head-container .menu {
+    min-height: 90vw; }
+    .head-container .menu .menu-sw {
+      position: static; }
+      .head-container .menu .menu-sw label {
+        margin-left: 15px; }
+  .head-container .header-static {
+    min-height: 100vw; }
+  .darkItem .content h2 {
+    font-size: 10vw;
+    line-height: 11vw; }
+  .timeline-caption {
+    margin-top: 100px; }
+    .timeline-caption * {
+      box-sizing: border-box; }
+    .timeline-caption h2 {
+      font-size: 10vw;
+      line-height: 11vw; }
+  .building-time .period li {
+    font-size: 5vw;
+    line-height: 5.5vw; }
+  .head-container.contact .menu {
+    min-height: 100px; }
+  .content .contact-form .content .left ul {
+    padding-top: 200px; }
+  .learn ul {
+    flex-direction: column; } }
 
 input#menuSwitch[type=checkbox]:checked ~ ul {
   display: flex !important; }
