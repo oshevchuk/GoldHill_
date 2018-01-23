@@ -3048,6 +3048,19 @@ body {
 }
 
 @media (max-width: 600px) {
+  body{
+    //max-width: 100vw;
+    overflow-x: hidden;
+  }
+  .head-container{
+    .space{
+      display: none;
+    }
+  }
+  .darkItem{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
   .sm .darkItem {
     padding-top: 80px;
     .name {
@@ -3227,6 +3240,7 @@ body {
 @media (max-width: 400px) {
   .head-container {
     .menu {
+      top: -1px;;
       min-height: 90vw;
       .menu-sw {
         position: static;
@@ -3248,11 +3262,23 @@ body {
       }
     }
   }
+  .vision{
+    .images{
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
+      img{
+        width: 50%;
+        position: inherit;
+        margin-bottom: 10px;
+      }
+    }
+  }
   .timeline-caption{
     * {
       box-sizing: border-box;
     }
-    margin-top: 100px;
+    margin-top: 60px;
     h2{
       font-size: 10vw;
       line-height: 11vw;
@@ -3263,12 +3289,26 @@ body {
       li{
         font-size: 5vw;
         line-height: 5.5vw;
+        min-height: 100px;
+        padding-bottom: 17px;
       }
     }
+  }
+  .sm .darkItem{
+    padding-top: 20px;
   }
   .head-container.contact{
     .menu{
       min-height: 100px;
+    }
+  }
+  .darkItem.type2.revert{
+    .name{
+      margin-top: 70px;
+      padding-top: 30px;
+      margin-bottom: 30px;
+      font-size: 5vw;
+      line-height: 5.5vw;
     }
   }
   .content{
@@ -3285,9 +3325,174 @@ body {
   .learn ul{
     flex-direction: column;
   }
+  .generations{
+    padding-top: 40px;
+    .name{
+      font-size: 5vw;
+      line-height: 5.5vw;
+      padding-top: 20px;
+    }
+    .content{
+      h2 {
+        font-size: 16vw;
+      }
+    }
+  }
+  .register-form.right{
+    .show{
+      h2{
+        font-size: 23vw;
+      }
+    }
+  }
+  .journey{
+    padding-top: 70px;
+    *{
+      box-sizing: border-box;
+    }
+    .slider{
+      .slide{
+        padding-left: 0%;
+        .slide-content{
+          left: 0;
+          h2{
+            font-size: 19vw;
+          }
+        }
+      }
+      .controls{
+        bottom: -5%;
+      }
+      .mask{
+        background-image: none;
+      }
+    }
+  }
+  .white-room{
+    .name{
+      padding-top: 30px;
+      font-size: 6vw;
+      line-height: 6.5vw;
+    }
+    .content{
+      h2{
+        font-size: 18vw;
+      }
+    }
+  }
+  .register-form {
+    form > div {
+      display: block;
+    }
+    p{
+      padding-left: 25px;
+    }
+  }
+  .learn h2{
+    font-size: 14vw;
+    line-height: 14.5vw;
+  }
+  .left-text{
+    margin-top: 70px;
+    font-size: 4.5vw;
+    line-height: 5.5vw;
+  }
+  .the_journey{
+    .text{
+      top: 10px;;
+      left: 10px;
+      width: 93%;
+      color: white;
+      font-size: 4vw;
+      line-height: 5.5vw;
+    }
+    .content{
+      .set{
+        ul{
+          left:37%;
+        }
+      }
+      .points{
+        li{
+          label{
+            width: 35px;
+            height: 35px;
+            background-color: rgba(255, 255, 255, 0.7);
+          }
+        }
+      }
+      .line{
+        opacity: 0.2;
+      }
+      .set:nth-of-type(2) img{
+        right: auto;
+      }
+      .set:nth-of-type(3) .points label:nth-of-type(1){
+        left: 0;
+      }
+    }
+    .infos{
+      right: auto;
+      li{
+        padding: 5px;
+        background-color: rgba(1,1,5,0.4);
+      }
+    }
+    .content img:nth-of-type(1){
+      right: auto;
+    }
+  }
+  .white-room .images img{
+    padding-left: 0;
+  }
+  .transparent-room{
+    .name{
+      padding-top: 30px;
+      font-size: 5vw;
+      line-height: 5.5vw;
+    }
+    .content{
+      h2{
+        font-size: 18vw;
+        line-height: 19vw;
+        padding-top: 10px;
+      }
+    }
+  }
 }
 
 
+input#menuSwitch[type=checkbox]:checked ~ label {
+  position: fixed;
+  top:10px;
+  right:  10px;
+  .i-menu{
+    display: none;
+    g{
+      path{
+        stroke: white;
+        fill: white;
+      }
+    }
+  }
+  &:before{
+    content: "X";
+    position: absolute;
+    top:1px;
+    right: 10px;
+    font-weight: bold;
+    color: white;
+    font-family: "Arial Black";
+    font-size: 20px;
+    display: block;
+    border: 1px solid white;
+    text-align: center;
+    line-height: 19px;
+    width: 18px;
+    text-align: center;
+    border-radius: 4px;
+  }
+}
 input#menuSwitch[type=checkbox]:checked ~ ul {
   display: flex !important;
 }
