@@ -152,7 +152,7 @@ body {
   }
   &.register-type{
     .menu{
-      min-height: auto;
+      min-height: 114px;
     }
   }
 }
@@ -1201,6 +1201,7 @@ body {
   line-height: 74px;
   color: #ffffff;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .items-container {
@@ -1332,6 +1333,9 @@ body {
   padding-left: 190px;
   padding-bottom: 405px;
   background-position: bottom left;
+  *{
+    box-sizing: border-box;
+  }
   .period{
     list-style: none;
     padding-left: 0;
@@ -2324,6 +2328,9 @@ body {
 }
 
 .contact{
+  .menu{
+    min-height: 114px;
+  }
   .header-static{
     width: 90%;
     img{
@@ -2337,6 +2344,7 @@ body {
       top:10%;
       right: 40px;
       width: 38%;
+      box-sizing: border-box;
       h2{
         font-family: "Mistuki 4 PERSONALUSE";
         font-size: 100px;
@@ -2431,6 +2439,9 @@ body {
       text-transform: uppercase;
     }
   }
+}
+.mobile-map{
+  display: none;
 }
 
 @media (max-width: 1920px) {
@@ -2860,6 +2871,7 @@ body {
       opacity: 0;
     }
     .menu-sw {
+      flex-direction: row-reverse;
       position: absolute;
       right: 45px;
       //top: 35px;;
@@ -3045,6 +3057,12 @@ body {
       }
     }
   }
+  .the_journey .content .set:nth-of-type(2) img{
+    right: -10px;
+  }
+  .white-room .images img{
+    width: 45%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -3183,6 +3201,7 @@ body {
     }
   }
   .white-time-item {
+    background-size: 100% auto;
     .description {
       font-size: 4vw;
       line-height: 4.5vw;
@@ -3234,6 +3253,32 @@ body {
       }
     }
   }
+  .time-line .time-item{
+    padding-left: 70px;
+    .year {
+      min-width: 86px;
+      width: 86px;
+      height: 86px;
+      left:-25px;
+    }
+  }
+  .time-line:before, .white-time-item:before{
+    left: 38px;
+  }
+  .white-time-item{
+    padding-left: 97px;
+    .year{
+      min-width: 86px;
+      width: 86px;
+      height: 86px;
+      left: 3px;
+    }
+  }
+  .mobile-map{
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+  }
 }
 
 
@@ -3241,7 +3286,7 @@ body {
   .head-container {
     .menu {
       top: -1px;;
-      min-height: 90vw;
+      min-height: 114px;
       .menu-sw {
         position: static;
         label {
@@ -3251,6 +3296,16 @@ body {
     }
     .header-static{
       min-height: 100vw;
+      *{
+        box-sizing: border-box;
+      }
+    }
+    .slider{
+      .slide{
+        .slide-content{
+          width: calc(100% - 50px);
+        }
+      }
     }
   }
 
@@ -3408,6 +3463,8 @@ body {
     }
     .content{
       .set{
+        width: 99vw;
+        overflow-x: hidden;
         ul{
           left:37%;
         }
@@ -3459,13 +3516,51 @@ body {
       }
     }
   }
+  .building-time{
+    .items{
+      *{
+        box-sizing: border-box;
+      }
+    }
+  }
+  .rooms{
+    img{
+      width: 90%;
+      margin: auto;
+    }
+  }
+  .items-collection .item .drops .text{
+    height: auto;
+  }
+  .milestones{
+    h2{
+      margin-bottom: 30px;
+    }
+    .wide-text{
+      padding-bottom: 170px;
+    }
+    .hill{
+      .hill-captions{
+        .points{
+          div{
+            font-size: 4vw;
+            line-height: 5.5vw;
+          }
+        }
+      }
+    }
+  }
+  .milestones .hill .hill-captions .points .radio-mask{
+    width: 8px;
+    height: 8px;
+  }
 }
 
 
 input#menuSwitch[type=checkbox]:checked ~ label {
   position: fixed;
-  top:10px;
-  right:  10px;
+  top:20px;
+  right:  20px;
   .i-menu{
     display: none;
     g{
@@ -3476,26 +3571,49 @@ input#menuSwitch[type=checkbox]:checked ~ label {
     }
   }
   &:before{
-    content: "X";
-    position: absolute;
-    top:1px;
-    right: 10px;
-    font-weight: bold;
-    color: white;
-    font-family: "Arial Black";
-    font-size: 20px;
-    display: block;
-    border: 1px solid white;
-    text-align: center;
-    line-height: 19px;
-    width: 18px;
-    text-align: center;
-    border-radius: 4px;
+    //content: "X";
+    //position: absolute;
+    //top:1px;
+    //right: 10px;
+    //font-weight: bold;
+    //color: white;
+    //font-family: "Arial Black";
+    //font-size: 20px;
+    //display: block;
+    //border: 1px solid white;
+    //text-align: center;
+    //line-height: 19px;
+    //width: 18px;
+    //text-align: center;
+    //border-radius: 4px;
   }
 }
 input#menuSwitch[type=checkbox]:checked ~ ul {
   display: flex !important;
 }
+
+
+input#menuSwitch[type=checkbox]:checked ~ label #nav-icon1 span:nth-child(1) {
+  top: 18px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+input#menuSwitch[type=checkbox]:checked ~ label  #nav-icon1 span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+input#menuSwitch[type=checkbox]:checked ~ label #nav-icon1 span:nth-child(3) {
+  top: 18px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
 
 .animated {
   opacity: 0;
@@ -3506,3 +3624,50 @@ svg.animated {
 }
 
 @import "animations";
+
+#nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4 {
+  width: 45px;
+  height: 45px;
+  position: relative;
+  //margin: 50px auto;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon1 span, #nav-icon3 span, #nav-icon4 span {
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background: white;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#nav-icon1 span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon1 span:nth-child(2) {
+  top: 18px;
+}
+
+#nav-icon1 span:nth-child(3) {
+  top: 36px;
+}
