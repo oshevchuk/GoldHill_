@@ -77,3 +77,12 @@ function check_view() {
 
 $window.on('scroll resize');
 $window.trigger('scroll');
+
+
+$("#menuSwitch").change(function() {
+    if(this.checked) {
+        $('.head-container').addClass('in_menu');
+    }else{
+        $('.head-container').removeClass('in_menu');
+    }
+});
