@@ -883,6 +883,126 @@ body {
       justify-content: space-between; }
       .rooms.exclusive .content .name {
         max-width: 160px; }
+  .rooms .room_type1 {
+    position: relative; }
+    .rooms .room_type1 .mask {
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      list-style: none; }
+      .rooms .room_type1 .mask li {
+        font-family: 'Montserrat-SemiBold';
+        position: absolute; }
+        .rooms .room_type1 .mask li span {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-image: linear-gradient(-42deg, #f4d47d 0%, #c88139 100%);
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          color: white;
+          animation: pulse 2s infinite; }
+        .rooms .room_type1 .mask li label {
+          display: none;
+          position: absolute;
+          color: #f4d47d;
+          font-weight: bold;
+          bottom: 45px;
+          text-align: center;
+          background-color: rgba(0, 0, 0, 0.5);
+          padding: 2px;
+          border-radius: 4px;
+          justify-content: center; }
+        .rooms .room_type1 .mask li span:hover ~ label {
+          display: flex; }
+      .rooms .room_type1 .mask li:nth-of-type(1) {
+        right: 23%;
+        top: 25%; }
+        .rooms .room_type1 .mask li:nth-of-type(1) label {
+          width: 200px;
+          left: -65px; }
+      .rooms .room_type1 .mask li:nth-of-type(2) {
+        left: 39%;
+        top: 0%; }
+        .rooms .room_type1 .mask li:nth-of-type(2) label {
+          width: 150px;
+          left: -50px; }
+      .rooms .room_type1 .mask li:nth-of-type(3) {
+        left: 44%;
+        top: 12%; }
+        .rooms .room_type1 .mask li:nth-of-type(3) label {
+          width: 150px;
+          left: -50px; }
+  .rooms .room_type2 {
+    position: relative; }
+    .rooms .room_type2 .mask {
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      list-style: none; }
+      .rooms .room_type2 .mask li {
+        font-family: 'Montserrat-SemiBold';
+        position: absolute; }
+        .rooms .room_type2 .mask li span {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-image: linear-gradient(-42deg, #f4d47d 0%, #c88139 100%);
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          color: white;
+          animation: pulse 2s infinite; }
+        .rooms .room_type2 .mask li label {
+          display: none;
+          position: absolute;
+          color: #f4d47d;
+          font-weight: bold;
+          bottom: 45px;
+          text-align: center;
+          background-color: rgba(0, 0, 0, 0.5);
+          padding: 2px;
+          border-radius: 4px;
+          justify-content: center; }
+        .rooms .room_type2 .mask li span:hover ~ label {
+          display: flex; }
+      .rooms .room_type2 .mask li:nth-of-type(1) {
+        right: 14%;
+        bottom: 8%; }
+        .rooms .room_type2 .mask li:nth-of-type(1) label {
+          width: 200px;
+          left: -65px; }
+      .rooms .room_type2 .mask li:nth-of-type(2) {
+        left: 36%;
+        bottom: 26%; }
+        .rooms .room_type2 .mask li:nth-of-type(2) label {
+          width: 200px;
+          left: -65px; }
+      .rooms .room_type2 .mask li:nth-of-type(3) {
+        right: 33%;
+        top: 17%; }
+        .rooms .room_type2 .mask li:nth-of-type(3) label {
+          width: 200px;
+          left: -65px; }
+      .rooms .room_type2 .mask li:nth-of-type(4) {
+        right: 10%;
+        bottom: 36%; }
+        .rooms .room_type2 .mask li:nth-of-type(4) label {
+          width: 200px;
+          left: -65px; }
+      .rooms .room_type2 .mask li:nth-of-type(5) {
+        left: 37%;
+        top: 5%; }
+        .rooms .room_type2 .mask li:nth-of-type(5) label {
+          width: 200px;
+          left: -65px; }
 
 .white {
   background-color: white; }
@@ -932,8 +1052,14 @@ body {
     display: flex;
     justify-content: space-around; }
     .vision .images img {
+      object-fit: cover;
+      width: 33%;
+      height: 350px;
       position: relative;
-      box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5); }
+      box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5);
+      transition: 0.4s; }
+      .vision .images img:hover {
+        height: 400px; }
     .vision .images img:nth-of-type(3) {
       top: 51px; }
     .vision .images img:nth-of-type(2) {
@@ -1017,7 +1143,7 @@ body {
   line-height: 74px;
   color: #ffffff;
   text-align: center;
-  margin-bottom: 40px; }
+  margin-bottom: 20px; }
 
 .items-container {
   padding-top: 120px;
@@ -2052,7 +2178,9 @@ body {
     padding-left: 5%;
     padding-right: 5%; }
   .contact .header-static .contact-zone {
-    width: 660px; } }
+    width: 660px; }
+  .darkItem {
+    padding-left: 8%; } }
 
 @media (max-width: 1500px) {
   .darkItem {
@@ -2534,7 +2662,7 @@ body {
     align-items: center;
     margin-bottom: 30px; }
     .vision .images img {
-      width: 50%;
+      width: 100%;
       position: inherit;
       margin-bottom: 10px; }
   .timeline-caption {
@@ -2659,7 +2787,9 @@ body {
     line-height: 5.5vw; }
   .milestones .hill .hill-captions .points .radio-mask {
     width: 8px;
-    height: 8px; } }
+    height: 8px; }
+  .milestones.type2 .hill {
+    margin-top: 140px; } }
 
 input#menuSwitch[type=checkbox]:checked ~ label {
   position: fixed;

@@ -1038,6 +1038,154 @@ body {
       }
     }
   }
+  .room_type1{
+    position: relative;
+    .mask{
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      top:0;
+      left: 0;
+      list-style: none;
+      li{
+        font-family: 'Montserrat-SemiBold';
+        position: absolute;
+        span{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-image: linear-gradient(-42deg, #f4d47d 0%, #c88139 100%);
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          color: white;
+          animation: pulse 2s infinite;
+        }
+        label{
+          display: none;
+          position: absolute;
+          color: #f4d47d;
+          font-weight: bold;
+          bottom: 45px;
+          text-align: center;
+          background-color: rgba(0,0,0,0.5);
+          padding: 2px;
+          border-radius: 4px;
+          justify-content: center;
+        }
+        span:hover ~ label{
+          display: flex;
+        }
+      }
+      li:nth-of-type(1){
+        right: 23%;
+        top:25%;
+        label{
+          width: 200px;
+          left: -65px;
+        }
+      }
+      li:nth-of-type(2){
+        left: 39%;
+        top:0%;
+        label{
+          width: 150px;
+          left: -50px;
+        }
+      }
+      li:nth-of-type(3){
+        left: 44%;
+        top:12%;
+        label{
+          width: 150px;
+          left: -50px;
+        }
+      }
+    }
+  }
+  .room_type2{
+    position: relative;
+    .mask{
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      top:0;
+      left: 0;
+      list-style: none;
+      li{
+        font-family: 'Montserrat-SemiBold';
+        position: absolute;
+        span{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-image: linear-gradient(-42deg, #f4d47d 0%, #c88139 100%);
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          color: white;
+          animation: pulse 2s infinite;
+        }
+        label{
+          display: none;
+          position: absolute;
+          color: #f4d47d;
+          font-weight: bold;
+          bottom: 45px;
+          text-align: center;
+          background-color: rgba(0,0,0,0.5);
+          padding: 2px;
+          border-radius: 4px;
+          justify-content: center;
+        }
+        span:hover ~ label{
+          display: flex;
+        }
+      }
+      li:nth-of-type(1){
+        right: 14%;
+        bottom:8%;
+        label{
+          width: 200px;
+          left: -65px;
+        }
+      }
+      li:nth-of-type(2){
+        left: 36%;
+        bottom:26%;
+        label{
+          width: 200px;
+          left: -65px;
+        }
+      }
+      li:nth-of-type(3){
+        right: 33%;
+        top:17%;
+        label{
+          width: 200px;
+          left: -65px;
+        }
+      }
+      li:nth-of-type(4){
+        right: 10%;
+        bottom:36%;
+        label{
+          width: 200px;
+          left: -65px;
+        }
+      }
+      li:nth-of-type(5){
+        left: 37%;
+        top:5%;
+        label{
+          width: 200px;
+          left: -65px;
+        }
+      }
+    }
+  }
 }
 
 .white {
@@ -1097,8 +1245,16 @@ body {
     display: flex;
     justify-content: space-around;
     img {
+      object-fit: cover;
+      width: 33%;
+      height: 350px;
       position: relative;
       box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5);
+      transition: 0.4s;
+      &:hover{
+        //width: 35%;
+        height: 400px;
+      }
     }
     img:nth-of-type(3) {
       top: 51px;
@@ -1201,7 +1357,7 @@ body {
   line-height: 74px;
   color: #ffffff;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .items-container {
@@ -2531,6 +2687,9 @@ body {
       }
     }
   }
+  .darkItem{
+    padding-left: 8%;
+  }
 }
 
 @media (max-width: 1500px) {
@@ -3323,7 +3482,7 @@ body {
       align-items: center;
       margin-bottom: 30px;
       img{
-        width: 50%;
+        width: 100%;
         position: inherit;
         margin-bottom: 10px;
       }
@@ -3553,6 +3712,11 @@ body {
   .milestones .hill .hill-captions .points .radio-mask{
     width: 8px;
     height: 8px;
+  }
+  .milestones.type2{
+    .hill{
+      margin-top: 140px;
+    }
   }
 }
 
