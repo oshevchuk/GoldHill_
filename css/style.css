@@ -1659,16 +1659,18 @@ body {
           height: 20px;
           width: 20px;
           position: absolute;
+          top: -18px;
+          left: -40px;
           z-index: 11;
           border-radius: 50%;
           box-sizing: border-box;
           animation: pulse 2s infinite; }
         .the_journey .content .points li label:nth-of-type(2) {
-          top: 138px;
-          left: 80px; }
+          top: 80px;
+          left: -23px; }
         .the_journey .content .points li label:nth-of-type(3) {
-          top: 280px;
-          left: -10px; }
+          top: 150px;
+          left: 30px; }
     .the_journey .content .set {
       position: relative; }
       .the_journey .content .set ul {
@@ -1679,26 +1681,27 @@ body {
         right: -137px;
         top: 27px; }
       .the_journey .content .set:nth-of-type(2) .points label:nth-of-type(1) {
-        top: 180px;
+        top: 226px;
         left: 175px; }
       .the_journey .content .set:nth-of-type(2) .points label:nth-of-type(2) {
-        top: 280px;
-        left: 0px; }
+        top: 174px;
+        left: 88px; }
       .the_journey .content .set:nth-of-type(2) .points label:nth-of-type(3) {
-        top: 350px;
+        top: 260px;
         left: -20px; }
       .the_journey .content .set:nth-of-type(3) img {
         max-width: 586px;
         top: 80px;
         left: -70px; }
       .the_journey .content .set:nth-of-type(3) .points label:nth-of-type(1) {
-        top: 180px;
+        top: 340px;
         left: -150px; }
       .the_journey .content .set:nth-of-type(3) .points label:nth-of-type(2) {
-        top: 320px;
-        left: 170px; }
+        top: 412px;
+        left: -46px; }
       .the_journey .content .set:nth-of-type(3) .points label:nth-of-type(3) {
-        top: 370px; }
+        top: 297px;
+        left: -316px; }
   .the_journey .infos {
     position: absolute;
     right: 200px;
