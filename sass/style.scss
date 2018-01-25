@@ -1931,7 +1931,7 @@ body {
 
 .the_journey {
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 300px;
   display: flex;
   justify-content: center;
   position: relative;
@@ -2047,6 +2047,10 @@ body {
             top: 280px;;
             left: 0px;
           }
+          label:nth-of-type(3){
+            top: 350px;;
+            left: -20px;
+          }
         }
       }
       &:nth-of-type(3){
@@ -2064,6 +2068,10 @@ body {
           label:nth-of-type(2){
             top: 320px;;
             left: 170px;
+          }
+          label:nth-of-type(3){
+            top: 370px;;
+
           }
         }
       }
@@ -3257,8 +3265,15 @@ body {
   .white-room .images img{
     width: 45%;
   }
-  .vision .text h2{
-    font-size: 10vw;
+  .vision .text {
+    h2 {
+      font-size: 10vw;
+    }
+    div{
+      p{
+        font-size: 2.7vw;
+      }
+    }
   }
 }
 
