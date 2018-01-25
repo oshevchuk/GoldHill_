@@ -1212,6 +1212,7 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   .text {
+    width: 36%;
     h2 {
       font-family: 'Mistuki 4 PERSONALUSE';
       font-size: 80px;
@@ -3026,6 +3027,9 @@ body {
 }
 
 @media (max-width: 1000px) {
+  .vision .text{
+    width: 100%;
+  }
   .journey-room{
     flex-direction: column;
     .content{

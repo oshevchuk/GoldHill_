@@ -1024,31 +1024,33 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start; }
-  .vision .text h2 {
-    font-family: 'Mistuki 4 PERSONALUSE';
-    font-size: 80px;
-    line-height: 74px;
-    color: #282828;
-    font-weight: 400; }
-  .vision .text div {
-    padding-left: 65px;
-    position: relative; }
-    .vision .text div:before {
-      content: "";
-      display: block;
-      width: 3px;
-      top: 5%;
-      height: 90%;
-      border-left: 3px solid #dec85b;
-      left: 0;
-      position: absolute; }
-    .vision .text div p {
+  .vision .text {
+    width: 36%; }
+    .vision .text h2 {
+      font-family: 'Mistuki 4 PERSONALUSE';
+      font-size: 80px;
+      line-height: 74px;
       color: #282828;
-      font-family: 'Montserrat-Light';
-      font-weight: 600;
-      font-size: 26px;
-      line-height: 36px;
-      letter-spacing: 0.88px; }
+      font-weight: 400; }
+    .vision .text div {
+      padding-left: 65px;
+      position: relative; }
+      .vision .text div:before {
+        content: "";
+        display: block;
+        width: 3px;
+        top: 5%;
+        height: 90%;
+        border-left: 3px solid #dec85b;
+        left: 0;
+        position: absolute; }
+      .vision .text div p {
+        color: #282828;
+        font-family: 'Montserrat-Light';
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 36px;
+        letter-spacing: 0.88px; }
   .vision .images {
     width: 60%;
     display: flex;
@@ -2404,6 +2406,8 @@ body {
       display: none; } }
 
 @media (max-width: 1000px) {
+  .vision .text {
+    width: 100%; }
   .journey-room {
     flex-direction: column; }
     .journey-room .content {
