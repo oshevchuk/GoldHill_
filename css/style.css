@@ -35,6 +35,15 @@ body {
   background-size: cover;
   overflow-x: hidden; }
 
+h2 {
+  margin-top: 0px;
+  margin-bottom: 40px;
+  font-family: 'Mistuki 4 PERSONALUSE';
+  font-size: 80px;
+  line-height: 74px;
+  color: #ffffff;
+  font-weight: 500; }
+
 .container {
   max-width: 1920px;
   width: 100%;
@@ -65,7 +74,8 @@ body {
   line-height: 36px;
   color: #cbb9b9;
   max-width: 680px;
-  width: 100%; }
+  width: 100%;
+  text-align: justify; }
 
 .vertical-text {
   transform: rotate(270deg);
@@ -408,14 +418,14 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: calc(100% - 140px);
+    width: calc(100% - 145px);
     height: 100%;
     background-color: #0c0c0c; }
   .slider .slide {
     position: absolute;
     left: 0;
     top: 0;
-    width: calc(100% - 140px);
+    width: calc(100% - 145px);
     height: 100%;
     z-index: 1;
     opacity: 0;
@@ -500,8 +510,8 @@ body {
     opacity: 1; } }
 
 .space {
-  min-width: 140px;
-  width: 140px; }
+  min-width: 145px;
+  width: 145px; }
 
 .time-line {
   padding-left: 140px;
@@ -554,7 +564,7 @@ body {
         line-height: 46px;
         color: #ffffff;
         letter-spacing: 0.88px;
-        padding-top: 65px; }
+        padding-top: 114px; }
     .time-line .time-item .content {
       max-width: 610px;
       width: 100%; }
@@ -571,7 +581,8 @@ body {
         font-family: 'Montserrat-Light';
         font-weight: 400;
         font-size: 17px;
-        line-height: 36px; }
+        line-height: 36px;
+        text-align: justify; }
       .time-line .time-item .content .bottom-content {
         font-family: 'Montserrat-Light';
         font-weight: 500;
@@ -587,10 +598,10 @@ body {
           content: "";
           display: block;
           position: absolute;
-          top: 0px;
+          top: 18%;
           left: 0px;
           width: 3px;
-          height: 90%;
+          height: 80%;
           border-left: 3px solid #dec85b; }
         .time-line .time-item .content .separate h4 {
           font-family: 'Montserrat-Light';
@@ -688,11 +699,12 @@ body {
       color: #756b6b;
       font-family: 'Montserrat-Light';
       font-size: 17px;
-      line-height: 36px; }
+      line-height: 36px;
+      text-align: justify; }
 
 .darkItem {
   padding-top: 160px;
-  padding-bottom: 90px;
+  padding-bottom: 150px;
   width: 100%;
   justify-content: space-between;
   display: flex;
@@ -710,8 +722,7 @@ body {
     padding-top: 55px;
     margin-top: 28px; }
   .darkItem .name.fix-name {
-    width: 250px;
-    margin-right: 80px; }
+    width: 200px; }
   .darkItem .content h2 {
     font-family: "Mistuki 1 PERSONALUSE";
     color: white;
@@ -727,7 +738,8 @@ body {
     font-weight: 600;
     font-size: 17px;
     display: block;
-    max-width: 550px; }
+    max-width: 650px;
+    text-align: justify; }
   .darkItem .content .details {
     text-decoration: none;
     text-transform: uppercase;
@@ -1051,6 +1063,10 @@ body {
         font-size: 26px;
         line-height: 36px;
         letter-spacing: 0.88px; }
+      .vision .text div span {
+        font-size: 17px;
+        text-align: justify;
+        display: block; }
   .vision .images {
     width: 60%;
     display: flex;
@@ -1085,7 +1101,7 @@ body {
   .whiteItem img {
     position: absolute;
     top: 120px;
-    left: 18%;
+    left: 13%;
     box-shadow: 0px 0px 90px rgba(2, 2, 2, 0.5); }
   .whiteItem .content {
     max-width: 600px;
@@ -1125,7 +1141,8 @@ body {
       line-height: 36px;
       font-weight: 600;
       font-size: 17px;
-      max-width: 550px; }
+      max-width: 550px;
+      text-align: justify; }
     .whiteItem .content .details {
       text-decoration: none;
       text-transform: uppercase;
@@ -1157,19 +1174,22 @@ body {
 .items-container {
   padding-top: 120px;
   padding-bottom: 150px; }
+  .items-container h2 {
+    margin-top: 20px; }
 
 .items-collection {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  width: 95%;
+  width: calc(100% - 190px);
   margin: auto; }
   .items-collection .item {
     position: relative;
     margin: 0px 27px; }
     .items-collection .item img {
       height: 100%;
-      object-fit: cover; }
+      object-fit: cover;
+      min-height: 400px; }
     .items-collection .item .drops {
       position: absolute;
       bottom: -60px;
@@ -1203,7 +1223,8 @@ body {
         line-height: 29px;
         position: relative;
         padding-left: 100px;
-        width: 71%; }
+        width: 71%;
+        text-align: justify; }
         .items-collection .item .drops .text:before {
           content: "";
           position: absolute;
@@ -1606,7 +1627,7 @@ body {
 
 .the_journey {
   padding-top: 100px;
-  padding-bottom: 300px;
+  padding-bottom: 170px;
   display: flex;
   justify-content: center;
   position: relative; }
@@ -1706,7 +1727,7 @@ body {
         left: -316px; }
   .the_journey .infos {
     position: absolute;
-    right: 200px;
+    right: 170px;
     top: 150px;
     list-style: none;
     width: 300px; }
@@ -1734,7 +1755,8 @@ body {
         line-height: 36px;
         color: #ffffff;
         padding-left: 35px;
-        position: relative; }
+        position: relative;
+        text-align: justify; }
         .the_journey .infos .info div:before {
           content: "";
           position: absolute;
@@ -1755,7 +1777,7 @@ body {
       left: 5%; }
     .the_journey .infos:nth-of-type(3) {
       top: auto;
-      bottom: 34%; }
+      bottom: 41%; }
   .the_journey li:nth-of-type(1) {
     top: 0px; }
   .the_journey li:nth-of-type(2) {
@@ -1787,7 +1809,8 @@ body {
     border-top: 3px solid #dec85b; }
   .white-room .content {
     max-width: 550px;
-    width: 100%; }
+    width: 100%;
+    text-align: justify; }
     .white-room .content h2 {
       margin-top: 0px;
       margin-bottom: 40px;
@@ -1839,7 +1862,8 @@ body {
       font-family: 'Montserrat-Light';
       font-size: 17px;
       line-height: 36px;
-      color: #ffffff; }
+      color: #ffffff;
+      text-align: justify; }
   .transparent-room .toch {
     display: flex;
     align-items: flex-end; }
@@ -1930,20 +1954,19 @@ body {
   font-size: 20px;
   line-height: 30px;
   margin: auto;
-  margin-bottom: 60px;
+  margin-bottom: 160px;
   width: 80%;
   text-align: center; }
 
 .milestones .wide-text {
-  font-size: 15px;
+  font-size: 20px;
   line-height: 28px;
-  margin-left: 5%;
-  width: 60%;
-  max-width: 700px;
-  text-align: left; }
+  width: 100%;
+  text-align: center; }
 
 .milestones h2 {
-  padding-left: 5%; }
+  text-align: center;
+  margin-bottom: 20px; }
 
 .generations {
   padding-top: 190px;
@@ -2107,7 +2130,7 @@ body {
   background-image: url("../img/v3bg.png");
   background-repeat: no-repeat;
   background-position: bottom right;
-  padding-top: 200px;
+  padding-top: 150px;
   padding-bottom: 200px;
   padding-left: 10%;
   padding-right: 10%; }
@@ -2155,6 +2178,20 @@ body {
 .mobile-map {
   display: none; }
 
+.fix1 {
+  margin-right: 20px; }
+
+.fix2 {
+  text-align: center;
+  padding-top: 130px;
+  margin-bottom: 0; }
+
+.fix3 {
+  margin-left: 68px; }
+
+.fix4 {
+  margin-right: 20px; }
+
 @media (max-width: 1920px) {
   .milestones .hill .bloker, .milestones.type2 .hill .hill-captions {
     height: 37.5vw; }
@@ -2201,8 +2238,8 @@ body {
   .contact .header-static .contact-zone {
     width: 660px; }
   .darkItem {
-    padding-left: 200px;
-    padding-right: 5%; }
+    padding-left: 140px;
+    padding-right: 140px; }
   .head-container.sm .darkItem.type2 {
     padding-left: 140px; }
     .head-container.sm .darkItem.type2 .image {
@@ -2214,10 +2251,27 @@ body {
   .head-container .space {
     display: none; }
   .the_journey .text {
-    max-width: 83%;
+    max-width: 44%;
     top: 12px;
     font-size: 16px;
-    line-height: 32px; } }
+    line-height: 32px;
+    text-align: justify; }
+  .the_journey .content {
+    margin-top: 250px;
+    max-width: 30%; }
+  .the_journey .infos {
+    right: 10px; }
+  .darkItem .image img.fix5 {
+    max-width: 470px; }
+  .items-collection .item .drops .text {
+    padding-left: 60px; }
+    .items-collection .item .drops .text:before {
+      left: 40px; }
+  .darkItem .image div {
+    height: 110%;
+    max-width: 360px; }
+  .fix5 {
+    margin-left: 10px; } }
 
 @media (max-width: 1500px) {
   .darkItem {
@@ -2561,7 +2615,11 @@ body {
   .vision .text h2 {
     font-size: 10vw; }
   .vision .text div p {
-    font-size: 2.7vw; } }
+    font-size: 2.7vw; }
+  .the_journey .text {
+    max-width: calc(100% - 145px);
+    width: calc(100% - 145px);
+    left: auto; } }
 
 @media (max-width: 600px) {
   body {
@@ -2691,7 +2749,9 @@ body {
     height: 200px;
     margin-top: 20px; }
   .head-container.sm .darkItem.type2 .image {
-    margin-left: 0px; } }
+    margin-left: 0px; }
+  .items-collection {
+    width: 95%; } }
 
 @media (max-width: 500px) {
   .head-container .menu {
