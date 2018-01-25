@@ -48,7 +48,7 @@
     </div>
 
     <div class="header-static">
-        <img src="img/map.jpg" alt="" >
+        <div id="map" class=""> </div>
         <div class="contact-zone">
             <h2 class="animated multi-step-right">Contact Us</h2>
             <div>
@@ -58,7 +58,7 @@
                     <p>Singapore 319002</p>
                     <p>Tel: (65) 6266 4320</p>
                     <p>Fax: (65) 6295 1108</p>
-                    <a href="#">View more</a>
+                    <!--<a href="#">View more</a>-->
                 </div>
                 <div  class="animated anim-right">
                     <h4>Johor Address</h4>
@@ -79,7 +79,7 @@
             <div class="left">
                 <ul>
                     <li class="mobile-map">
-                        <img src="img/map.jpg" alt="" class="mobile-map">
+                        <div id="map2" class="mobile-map"> </div>
                     </li>
                     <li class="animated multi-step-right">
                         <h5>Car</h5>
@@ -104,7 +104,7 @@
                     </li>
                 </ul>
                 <div>
-                <a href="#" class="btn map">Click to download map</a>
+                <a href="img/map.jpg" class="btn map">Click to download map</a>
                 </div>
             </div>
             <div class="register-form right">
@@ -168,5 +168,20 @@
 
 <!--<script src="js/main.js"></script>-->
 <script src="js/scroll.js"></script>
+
+<script>
+    function myMap() {
+        var mapOptions = {
+            center: new google.maps.LatLng(51.5, -0.12),
+            zoom: 10,
+            mapTypeId: google.maps.MapTypeId.HYBRID
+        }
+        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+        var map2 = new google.maps.Map(document.getElementById("map2"), mapOptions);
+    }
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwILnYmLCQfrX_pYokPaN7qcECTI96j9M&callback=myMap"></script>
+
 </body>
 </html>
