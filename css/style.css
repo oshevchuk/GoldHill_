@@ -711,7 +711,7 @@ body {
     margin-top: 28px; }
   .darkItem .name.fix-name {
     width: 250px;
-    margin-right: 45px; }
+    margin-right: 80px; }
   .darkItem .content h2 {
     font-family: "Mistuki 1 PERSONALUSE";
     color: white;
@@ -757,7 +757,7 @@ body {
       background-position: right center;
       position: absolute;
       top: -40px;
-      right: 10%; }
+      right: 13%; }
   .darkItem.type2 .name {
     padding-top: 108px; }
   .darkItem.type2 .content {
@@ -780,7 +780,7 @@ body {
     max-width: 660px;
     width: 100%; }
     .darkItem.type2 .image div {
-      max-width: 660px;
+      max-width: 600px;
       height: 396px;
       top: 40px; }
     .darkItem.type2 .image img {
@@ -1637,11 +1637,13 @@ body {
       border-radius: 2px;
       opacity: 0.5; }
     .the_journey .content img {
-      position: relative; }
+      position: relative;
+      object-fit: cover; }
     .the_journey .content img:nth-of-type(1) {
       max-width: 450px;
       top: -87px;
-      right: 26px; }
+      right: 26px;
+      height: 440px; }
     .the_journey .content .points {
       position: absolute;
       z-index: 10;
@@ -2197,7 +2199,8 @@ body {
       max-width: 550px;
       margin-left: 60px; }
     .head-container.sm .darkItem.type2 .name.fix-name {
-      margin-right: 100px; }
+      margin-right: 100px;
+      font-size: 24px; }
   .head-container .space {
     display: none; } }
 
@@ -2353,7 +2356,9 @@ body {
     .rooms .content {
       width: 100%; }
   .contact .header-static img {
-    width: 33%; } }
+    width: 33%; }
+  .head-container.sm .darkItem.type2 {
+    padding-left: 5%; } }
 
 @media (max-width: 1200px) {
   .head-container .menu ul {
@@ -2530,7 +2535,9 @@ body {
   .the_journey .content .set:nth-of-type(2) img {
     right: -10px; }
   .white-room .images img {
-    width: 45%; } }
+    width: 45%; }
+  .vision .text h2 {
+    font-size: 10vw; } }
 
 @media (max-width: 600px) {
   body {
@@ -2657,7 +2664,9 @@ body {
   .mobile-map {
     display: block;
     width: 100%;
-    margin-top: 20px; } }
+    margin-top: 20px; }
+  .head-container.sm .darkItem.type2 .image {
+    margin-left: 0px; } }
 
 @media (max-width: 500px) {
   .head-container .menu {
@@ -2676,6 +2685,8 @@ body {
   .darkItem .content h2 {
     font-size: 10vw;
     line-height: 11vw; }
+  .vision .text h2 {
+    font-size: 18vw; }
   .vision .images {
     flex-direction: column;
     align-items: center;
