@@ -2210,7 +2210,12 @@ body {
       margin-right: 100px;
       font-size: 24px; }
   .head-container .space {
-    display: none; } }
+    display: none; }
+  .the_journey .text {
+    max-width: 83%;
+    top: 12px;
+    font-size: 16px;
+    line-height: 32px; } }
 
 @media (max-width: 1500px) {
   .darkItem {
@@ -2497,7 +2502,12 @@ body {
     flex-direction: column; }
     .rooms.exclusive .content .name {
       max-width: 270px;
-      margin-bottom: 20px; } }
+      margin-bottom: 20px; }
+  .the_journey {
+    padding-top: 200px; }
+    .the_journey .text {
+      box-sizing: border-box;
+      padding-right: 5%; } }
 
 @media (max-width: 1000px) {
   .whiteItem img {

@@ -2730,6 +2730,12 @@ body {
       display: none;
     }
   }
+  .the_journey .text{
+    max-width: 83%;
+    top: 12px;
+    font-size: 16px;
+    line-height: 32px;
+  }
 }
 
 @media (max-width: 1500px) {
@@ -3175,7 +3181,13 @@ body {
       }
     }
   }
-
+  .the_journey{
+    padding-top: 200px;
+    .text{
+      box-sizing: border-box;
+      padding-right: 5%;
+    }
+  }
 }
 
 @media (max-width: 1000px) {
